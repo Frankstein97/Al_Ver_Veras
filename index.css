@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  text-decoration: none;
+}
+body {
+  background: #f7f5eb;
+}
+/* --------------
+-------Nav ------
+-------------- */
+.nav-buttons {
+  width: 1.5rem;
+  border-radius: 50%;
+  opacity: 100%;
+}
+.nav-buttons:hover {
+  border: 5px solid rgba(0, 128, 0, 0.632);
+}
+.menu-nav {
+  font-size: 10px;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+}
+.menu-nav:hover {
+  border-left: 5px solid rgba(0, 128, 0, 0.632);
+}
+.index-nav {
+  font-size: 10px;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 92%;
+}
+.index-nav:hover {
+  border-left: 5px solid rgba(0, 128, 0, 0.632);
+} 
+
+
+/* --------------
+-------header ------
+-------------- */
+
+header {
+background-image: url("https://www.miradorprovincial.com/um/fotos/388019_stencils_pegatinas_stickers_muralismo_street_art_1024_x_680.jpg");;
+  width: 100%;
+  height: 100vh;
+  border-top: 5px solid rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  padding: 7rem 0rem;
+  font-size: 58px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 9px 7px rgba(0,0,0,0.6);
+}
+header > p {
+  width: 70%;
+  padding: 4rem 3rem;
+  text-align: center;
+  font-size: 25px;
+  border: 5px solid yellow;
+}
+header > h2 {
+  font-size: 30px;
+}
+
+.qr {
+  width: 500px;
+}
+/* --------------
+------- main ------
+-------------- */
+main {
+  width: 100%;
+  height: auto;
+  border-top: 5px solid rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > h2 {
+  width: 100%;
+  padding: 7rem 0rem;
+  font-size: 58px;
+  color: rgb(0, 255, 174);
+}
+main > p {
+  width: 70%;
+  padding: 4rem 3rem;
+  text-align: center;
+  font-size: 25px;
+
+}
+main > img {
+  padding: 2rem;
+}
+/* aun no se si va a ir 
+.contact {
+    width: 100%;
+    height: 90vh;
+    border-top: 5px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact > h2 {
+    text-align: center;
+    width: 100%;
+    padding: 4rem 0rem;
+    font-size: 58px;
+    color: rgb(0, 0, 0);
+}
+.contact-form {
+    
+background-color: white;
+    width: 50%;
+    height: 5rem;
+} */
+footer {
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  border-top: 5px solid rgb(0, 0, 0);
+}
+footer > h3 {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* ----------------- menu ---------------------- */
+
+/* --------------
+------- nav ------
+-------------- */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(34, 164, 145);
+  box-sizing: border-box;
+  border: solid 1px rgba(0, 0, 0, 0.381);
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card h2 {
+  background-color: #f7f5eb76;
+  font-size: 4rem;
+  padding: 1rem;
+}
+.button-card {
+  background: rgba(49, 61, 125, 0.756);
+  width: auto;
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  font-size: 17px;
+  text-align: center;
+}
+.button-card:hover {
+    padding: 1.5rem 5.5rem;
+
+}
+
+.fumigarnos {
+  background-image: linear-gradient(
+      rgba(60, 120, 45, 0.5),
+      rgba(24, 63, 33, 0.5)
+    ),
+    url("https://www.fiscales.gob.ar/wp-content/uploads/2019/09/20190903095310_20190805132345-natalia-teoldi-portada.jpeg");
+}
+
+.petroleras {
+  background-image: linear-gradient(
+      rgba(45, 69, 120, 0.5),
+      rgba(46, 94, 151, 0.5)
+    ),
+    url("https://cdn.biodiversidadla.org/var/biodiversidadla_org/storage/images/objetos_relacionados/image_folder/petroleo_y_medioambiente_el_caso_de_argentina/1120572-1-esl-ES/Petroleo_y_medioambiente_el_caso_de_Argentina_xlarge.jpg");
+}
+
+.lgbt {
+  background-image: linear-gradient(
+      180deg,
+      #fe000048 16.66%,
+      #fd8b0034 16.66%,
+      33.32%,
+      #ffe6003d 33.32%,
+      49.98%,
+      #109f0b30 49.98%,
+      66.64%,
+      #0645b338 66.64%,
+      83.3%,
+      #c22edc2c 83.3%
+    ),
+    url("https://ovejarosa.com/wp-content/uploads/2019/06/rachel-y-laura-boda-lesbianas.png");
+}   
+.adopta {
+  background-image: linear-gradient(
+      rgba(120, 71, 45, 0.5),
+      rgba(146, 151, 46, 0.622)
+    ),
+    url("https://mvsnoticias.com/u/fotografias/m/2022/7/26/f960x540-489916_563991_7.jpg");
+}
