@@ -1,0 +1,164 @@
+/* Aqui empieza el css de el index */
+/* se reaiza con grids de css, aun no esta definido como me gustaria la vista en desktop y mobile */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.20fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SECTION1 SECTION1 SECTION1"
+      "SECTION2 SECTION2 SECTION2"
+      "SECTION3 SECTION3 SECTION3"
+      "SECTION4 SECTION4 SECTION4"
+      "FOOTER FOOTER FOOTER";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .SECTION1 {  grid-area: SECTION1;}
+  .SECTION2 {  grid-area: SECTION2;}
+  .SECTION3 {  grid-area: SECTION3;}
+  .SECTION4 {  grid-area: SECTION4;}
+  .FOOTER   {  grid-area: FOOTER;  }
+  .child{
+    width: 100%;
+    height: 42vh;
+    margin: 4vh 0rem;
+  }
+  .child > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-agrotoxicos {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    
+  }
+  .child {
+    filter: grayscale(1);
+  }
+  
+  .child:hover {
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  
+  .FOOTER {
+    padding: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: black;
+    background-color: #a6f;
+  }
+  .FOOTER > p {
+    margin: 0 auto;
+    margin-top: -2rem;
+  }
+  
+  .bg > img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .bg > h2 {
+      position: absolute;
+      font-family: 'Nothing You Could Do', cursive;
+      font-weight: bold;
+      font-size: 30px;
+      width: 12rem;
+      height: auto;
+  
+  }
+  
+  
+  .bg > a > button {
+    visibility: hidden;
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .bg:hover > a > button {
+      visibility: visible;
+      position: absolute;
+      bottom: 3%;
+      right: 3%;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 15px;
+      background-color: transparent;
+      height: 1.6rem;
+      width: 8rem;
+      font-size: 1rem;
+      box-shadow: #0000003d 0px 3px 8px;
+      transition: 2s;
+  }
+  .adopta > h2 {
+    color: #E07934;
+    text-align: right;
+    bottom: 12%;
+    right: 5%;
+  }
+  .adopta:hover > a > button {
+    background-color: #e03f34;
+  }
+  .petroleo h2 {
+    color: #0062cc;
+    text-align: left;
+    bottom: 16%;
+    left: 3%;
+  }
+  .petroleo:hover > a > button {
+    background-color: #007bff;
+    left: 3%;
+  }
+  .agrotoxicos > h2 {
+    color: #e1de27;
+    text-align: left;
+    bottom: 12%;
+    right: 3%;
+    width: 10rem;
+  }
+  .agrotoxicos:hover > a > button {
+    background-color: #e1de27;
+    right: 3%;
+  }
+  .lgbt > h2 {
+    color: #ffffff;
+    text-align: left;
+    bottom: 44%;
+    left: -17%;
+    transform: rotate(270deg);
+  }
+  .lgbt:hover > a > button {
+    background-color: #ffffff;
+    left: 3%;
+  }
+  
+  /* este media query esta hecho para acomodar el desktop porque lo de arriba es para mobile */
+  
+  @media only screen and (min-width: 768px) {
+    .bg:hover > a > button{
+      width: 12rem;
+    }
+    .lgbt >  h2 {
+      text-align: left;
+      bottom: 16%;
+      left: 3%;
+      transform: rotate(0deg);
+    }
+    
+    .bg > h2 { 
+      font-size: 48px;
+      width: 30rem;
+      height: auto;
+      bottom: 12%;
+      right: 4%;
+    }
+  
+  }

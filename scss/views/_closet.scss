@@ -1,0 +1,49 @@
+
+/* ---------CLOSET LGBT----------------- */
+
+  /* ------- header ----*/
+  .afiche {
+    @include afiche;
+    &-lgbt {
+        background-image: linear-gradient(
+            0deg,
+            #d61a1a 0%,
+            #d75e17 20%,
+            #e4d015 40%,
+            #28d910 60%,
+            #1b15d2 80%,
+            #d314c6 100%
+          );
+     
+      .title-1 {
+        font-size: 2.9rem;
+        transform: scale(1, 2);
+        font-family: 'Coda Caption', sans-serif;
+      }
+      
+      .title-2 {
+        font-size: 2.7rem;
+        transform: scale(1, 2.5);
+        font-family: 'Roboto Mono', monospace;
+      }
+      
+      img {
+        width: 15rem;
+      }
+      .title-3 {
+        font-size: 2rem;
+        transform: scale(1, 3);
+        font-family: 'Moul', cursive;
+      }
+    }
+    
+    &footer {
+        border-top: 2px solid black;
+        padding: 1rem;
+        width: 80%;
+        font-size: 1.5rem;
+        top: 10px;
+        position: relative;
+      }  
+  }
+   

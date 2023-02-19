@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+h1 {
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  font-family: 'Moul'; }
+
+h2 {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  font-family: 'Moul'; }
+
+h3 {
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  font-family: 'Moul'; }
+
+/* fuentes para textos que igual no funcionan */
+/* Aqui empieza el css de el index */
+/* se reaiza con grids de css, aun no esta definido como me gustaria la vista en desktop y mobile */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.20fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "SECTION1 SECTION1 SECTION1" "SECTION2 SECTION2 SECTION2" "SECTION3 SECTION3 SECTION3" "SECTION4 SECTION4 SECTION4" "FOOTER FOOTER FOOTER";
+  width: 100%;
+  height: 100%; }
+
+.SECTION1 {
+  grid-area: SECTION1; }
+
+.SECTION2 {
+  grid-area: SECTION2; }
+
+.SECTION3 {
+  grid-area: SECTION3; }
+
+.SECTION4 {
+  grid-area: SECTION4; }
+
+.FOOTER {
+  grid-area: FOOTER; }
+
+.child {
+  width: 100%;
+  height: 42vh;
+  margin: 4vh 0rem; }
+
+.child > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.bg-agrotoxicos {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
+.child {
+  filter: grayscale(1); }
+
+.child:hover {
+  filter: grayscale(0);
+  transition-property: filter;
+  transition-duration: 2s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+
+.FOOTER {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+  background-color: #a6f; }
+
+.FOOTER > p {
+  margin: 0 auto;
+  margin-top: -2rem; }
+
+.bg > img {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.bg > h2 {
+  position: absolute;
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  width: 12rem;
+  height: auto; }
+
+.bg > a > button {
+  visibility: hidden;
+  background-color: transparent;
+  border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.bg:hover > a > button {
+  visibility: visible;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+  background-color: transparent;
+  height: 1.6rem;
+  width: 8rem;
+  font-size: 1rem;
+  box-shadow: #0000003d 0px 3px 8px;
+  transition: 2s; }
+
+.adopta > h2 {
+  color: #E07934;
+  text-align: right;
+  bottom: 12%;
+  right: 5%; }
+
+.adopta:hover > a > button {
+  background-color: #e03f34; }
+
+.petroleo h2 {
+  color: #0062cc;
+  text-align: left;
+  bottom: 16%;
+  left: 3%; }
+
+.petroleo:hover > a > button {
+  background-color: #007bff;
+  left: 3%; }
+
+.agrotoxicos > h2 {
+  color: #e1de27;
+  text-align: left;
+  bottom: 12%;
+  right: 3%;
+  width: 10rem; }
+
+.agrotoxicos:hover > a > button {
+  background-color: #e1de27;
+  right: 3%; }
+
+.lgbt > h2 {
+  color: #ffffff;
+  text-align: left;
+  bottom: 44%;
+  left: -17%;
+  transform: rotate(270deg); }
+
+.lgbt:hover > a > button {
+  background-color: #ffffff;
+  left: 3%; }
+
+/* este media query esta hecho para acomodar el desktop porque lo de arriba es para mobile */
+@media only screen and (min-width: 768px) {
+  .bg:hover > a > button {
+    width: 12rem; }
+  .lgbt > h2 {
+    text-align: left;
+    bottom: 16%;
+    left: 3%;
+    transform: rotate(0deg); }
+  .bg > h2 {
+    font-size: 48px;
+    width: 30rem;
+    height: auto;
+    bottom: 12%;
+    right: 4%; } }
+
+/* ---------ADOPTA----------------- */
+/* ------- header ----*/
+.afiche {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .afiche-adopta {
+    background-image: linear-gradient(0deg, #ff8e44 0%, #f91362 50%, #35126a 100%); }
+    .afiche-adopta .title-1 {
+      font-size: 2.8rem;
+      transform: scale(1, 3);
+      font-family: 'Coda Caption', sans-serif; }
+    .afiche-adopta .title-2 {
+      font-size: 2.7rem;
+      transform: scale(1, 2.5);
+      font-family: 'Roboto Mono', monospace; }
+    .afiche-adopta img {
+      width: 15rem; }
+    .afiche-adopta .title-3 {
+      font-size: 2.8rem;
+      transform: scale(1, 3);
+      font-family: 'Moul', cursive; }
+  .afichefooter {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative; }
+
+/* ------- main ----*/
+.row {
+  align-items: center; }
+
+main {
+  margin: 3rem 1rem;
+  text-align: center; }
+  main .waves {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    bottom: -10px; }
+  main .section2 {
+    background-color: #35126a;
+    margin: 2rem;
+    color: white;
+    align-items: flex-start; }
+  main .section2 p {
+    margin: 1rem;
+    font-size: 16px; }
+  main .section2 img {
+    text-align: center;
+    margin: 2rem 0rem;
+    width: 400px; }
+  main .subtitle {
+    margin: 2rem 2rem; }
+  main .accordion {
+    margin: 1rem; }
+  main .download-btn {
+    margin: 1rem; }
+  main .download-afiche {
+    margin: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  /* >>> main   */
+  main {
+    margin-top: 6rem;
+    text-align: center; }
+  main h1 {
+    padding: 0rem 3rem;
+    font-size: 3rem;
+    font-family: 'Moul';
+    /* width: 100%; */ }
+  main h2 {
+    font-size: 3rem; }
+  main p {
+    margin: 6rem;
+    text-align-last: center;
+    font-size: 18px; }
+  .section2 p {
+    margin: 3rem 8rem;
+    font-size: 20px; }
+  .section2 img {
+    width: 400px; }
+  .fixed-bottom {
+    margin-right: 2% !important; }
+  .fixed-bottom .btn {
+    margin-bottom: 3rem; } }
+
+/* ---------CLOSET LGBT----------------- */
+/* ------- header ----*/
+.afiche {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .afiche-lgbt {
+    background-image: linear-gradient(0deg, #d61a1a 0%, #d75e17 20%, #e4d015 40%, #28d910 60%, #1b15d2 80%, #d314c6 100%); }
+    .afiche-lgbt .title-1 {
+      font-size: 2.9rem;
+      transform: scale(1, 2);
+      font-family: 'Coda Caption', sans-serif; }
+    .afiche-lgbt .title-2 {
+      font-size: 2.7rem;
+      transform: scale(1, 2.5);
+      font-family: 'Roboto Mono', monospace; }
+    .afiche-lgbt img {
+      width: 15rem; }
+    .afiche-lgbt .title-3 {
+      font-size: 2rem;
+      transform: scale(1, 3);
+      font-family: 'Moul', cursive; }
+  .afichefooter {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative; }
+
+/* ---------PAREN DE FUMIGARNOS----------------- */
+/* ------- header ----*/
+.afiche {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .afiche-fumigarnos {
+    background-image: linear-gradient(0deg, #1aab2b 0%, #daf913 50%, #2c8a63 100%); }
+    .afiche-fumigarnos .title-1 {
+      font-size: 2.9rem;
+      transform: scale(1, 2.5);
+      font-family: 'Coda Caption', sans-serif; }
+    .afiche-fumigarnos .title-2 {
+      font-size: 2.7rem;
+      transform: scale(1, 2.5);
+      font-family: 'Roboto Mono', monospace; }
+    .afiche-fumigarnos img {
+      width: 15rem; }
+    .afiche-fumigarnos .title-3 {
+      font-size: 2.8rem;
+      transform: scale(1, 2);
+      font-family: 'Moul', cursive; }
+  .afichefooter {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative; }
+
+/* ---------ADOPTA----------------- */
+/* ------- header ----*/
+.afiche {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .afiche-petroleras {
+    background-image: linear-gradient(0deg, #1e4ba5 0%, #136bf9 25%, #8a2c84 100%); }
+    .afiche-petroleras .title-1 {
+      font-size: 2.9rem;
+      transform: scale(1, 3);
+      font-family: 'Coda Caption', sans-serif; }
+    .afiche-petroleras .title-2 {
+      font-size: 2.7rem;
+      transform: scale(1, 2.5);
+      font-family: 'Roboto Mono', monospace; }
+    .afiche-petroleras img {
+      width: 15rem; }
+    .afiche-petroleras .title-3 {
+      font-size: 2.8rem;
+      transform: scale(1, 3);
+      font-family: 'Moul', cursive; }
+  .afichefooter {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative; }
+
+/* --------navbar en views/pages --------*/
+.fixed-bottom {
+  margin-top: 5% !important;
+  margin-right: 5% !important; }
+
+.btn-offcanvas {
+  float: right;
+  margin: 10px; }
+
+/* ---------------navbar -------------- */
+.nav-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black; }
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  animation: 2seg;
+  margin-top: 2rem; }
+
+.nav-item:hover {
+  color: black;
+  text-decoration: none;
+  transform: scale(1.1);
+  border-bottom: 1px solid rgba(65, 65, 65, 0.438); }
+
+.dropup-nav {
+  align-self: flex-start; }

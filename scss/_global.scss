@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+  }
+
+
+// Definiendo fuentes para headers y bodys fijos
+h1 {
+    padding:0.6rem;
+    font-size: 1.4rem;
+    font-family: 'Moul';
+  }
+  
+ h2 {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  font-family: 'Moul';
+  }
+
+  h3 {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    font-family: 'Moul';
+    }
+
+
+/* fuentes para textos que igual no funcionan */
+//   @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+//   * > p {
+//     font-family: 'Nunito', sans-serif;
+//   }  

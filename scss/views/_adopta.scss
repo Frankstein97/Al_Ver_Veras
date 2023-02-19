@@ -1,0 +1,135 @@
+
+/* ---------ADOPTA----------------- */
+
+  /* ------- header ----*/
+  .afiche {
+    @include afiche;
+    &-adopta {
+        background-image: linear-gradient(
+          0deg,
+          #ff8e44 0%,
+          #f91362 50%,
+          #35126a 100%
+        );
+     
+      .title-1 {
+        font-size: 2.8rem;
+        transform: scale(1, 3);
+        font-family: 'Coda Caption', sans-serif;
+      }
+      
+      .title-2 {
+        font-size: 2.7rem;
+        transform: scale(1, 2.5);
+        font-family: 'Roboto Mono', monospace;
+      }
+      
+      img {
+        width: 15rem;
+      }
+      .title-3 {
+        font-size: 2.8rem;
+        transform: scale(1, 3);
+        font-family: 'Moul', cursive;
+      }
+    }
+    
+    &footer {
+        border-top: 2px solid black;
+        padding: 1rem;
+        width: 80%;
+        font-size: 1.5rem;
+        top: 10px;
+        position: relative;
+      }  
+  }
+
+  /* ------- main ----*/
+  .row {
+    align-items: center;
+  }
+  main {
+    margin:3rem 1rem;
+    text-align: center;
+  
+  .waves {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    bottom:-10px;
+  }
+
+  .section2 {
+    background-color: #35126a;
+    margin: 2rem;
+    color:white;
+    align-items: flex-start
+  
+  }
+  .section2 p {
+    margin:1rem;
+    font-size: 16px;
+  
+  }
+  .section2 img {
+    text-align: center;
+    margin:2rem 0rem;
+    width: 400px;
+  }
+  .subtitle {
+  
+    margin:2rem 2rem;
+  }
+  .accordion {
+    margin:1rem;
+  }
+  .download-btn {
+    margin:1rem
+  }
+  
+  .download-afiche {
+    margin: 1rem;
+  }
+}
+  @media only screen and (min-width: 768px) {
+  
+    /* >>> main   */
+  main {
+    margin-top:6rem;
+    text-align: center;
+  }
+  
+  main h1 {
+    padding: 0rem 3rem;
+    font-size: 3rem;
+    font-family: 'Moul';
+    /* width: 100%; */
+  }
+  
+  main h2 {
+    font-size: 3rem;
+  }
+  main p {
+   margin: 6rem ;
+   text-align-last: center;
+   font-size: 18px;
+  }
+  .section2 p {
+    margin:3rem 8rem;
+    font-size: 20px;
+  }
+  .section2 img {
+    width: 400px;
+  }
+  .fixed-bottom {
+    margin-right: 2%!important;
+  }
+  .fixed-bottom .btn {
+    margin-bottom: 3rem;
+  }
+  
+  
+  }
+  
+  
+  

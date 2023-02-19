@@ -1,0 +1,47 @@
+
+/* ---------PAREN DE FUMIGARNOS----------------- */
+
+  /* ------- header ----*/
+  .afiche {
+    @include afiche;
+    &-fumigarnos {
+            background-image: linear-gradient(
+              0deg,
+              #1aab2b 0%,
+              #daf913 50%,
+              #2c8a63 100%
+            );
+    
+     
+      .title-1 {
+        font-size: 2.9rem;
+        transform: scale(1, 2.5);
+        font-family: 'Coda Caption', sans-serif;
+      }
+      
+      .title-2 {
+        font-size: 2.7rem;
+        transform: scale(1, 2.5);
+        font-family: 'Roboto Mono', monospace;
+      }
+      
+      img {
+        width: 15rem;
+      }
+      .title-3 {
+        font-size: 2.8rem;
+        transform: scale(1, 2);
+        font-family: 'Moul', cursive;
+      }
+    }
+    
+    &footer {
+        border-top: 2px solid black;
+        padding: 1rem;
+        width: 80%;
+        font-size: 1.5rem;
+        top: 10px;
+        position: relative;
+      }  
+  }
+   

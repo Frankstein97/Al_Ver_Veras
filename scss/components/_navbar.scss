@@ -1,0 +1,38 @@
+/* --------navbar en views/pages --------*/
+.fixed-bottom {
+  margin-top: 5%!important;
+  margin-right: 5%!important;
+}
+
+.btn-offcanvas {
+  float: right;
+  margin: 10px;
+}
+
+/* ---------------navbar -------------- */
+
+.nav-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+  }
+
+  .nav-item {
+    color:black;
+    text-decoration: none;
+    animation: 2seg;
+    margin-top: 2rem;
+    
+  }
+.nav-item:hover {
+    color:black;
+    text-decoration: none;
+    transform: scale(1.1);
+    border-bottom: 1px solid rgba(65, 65, 65, 0.438);
+  }
+
+  .dropup-nav {
+    align-self: flex-start;
+  }
