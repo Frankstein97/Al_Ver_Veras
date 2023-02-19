@@ -183,7 +183,7 @@ h3 {
   justify-content: space-evenly;
   align-items: center; }
   .afiche-adopta {
-    background-image: linear-gradient(0deg, #ff8e44 0%, #f91362 50%, #35126a 100%); }
+    background-image: linear-gradient(0deg, #ff8e44 0%, #f91362 50%, #35126A 100%); }
     .afiche-adopta .title-1 {
       font-size: 2.8rem;
       transform: scale(1, 3);
@@ -211,16 +211,12 @@ h3 {
   align-items: center; }
 
 main {
-  margin: 3rem 1rem;
   text-align: center; }
-  main .waves {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    bottom: -10px; }
+  main .section1 {
+    padding: 3rem 2rem; }
   main .section2 {
-    background-color: #35126a;
-    margin: 2rem;
+    background-color: #35126A;
+    padding: 3rem 2rem;
     color: white;
     align-items: flex-start; }
   main .section2 p {
@@ -230,6 +226,15 @@ main {
     text-align: center;
     margin: 2rem 0rem;
     width: 400px; }
+  main .waves {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    bottom: -10px; }
+    main .waves-2 {
+      background-color: #35126A;
+      bottom: 0px;
+      top: -1px; }
   main .subtitle {
     margin: 2rem 2rem; }
   main .accordion {
@@ -238,6 +243,13 @@ main {
     margin: 1rem; }
   main .download-afiche {
     margin: 1rem; }
+
+ul {
+  font-size: 16px;
+  padding: 1rem;
+  width: 100%;
+  list-style: none;
+  text-align: left; }
 
 @media only screen and (min-width: 768px) {
   /* >>> main   */

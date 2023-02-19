@@ -7,9 +7,9 @@
     &-adopta {
         background-image: linear-gradient(
           0deg,
-          #ff8e44 0%,
-          #f91362 50%,
-          #35126a 100%
+          $adopta-color-three 0%,
+          $adopta-color-two 50%,
+          $adopta-color-one 100%
         );
      
       .title-1 {
@@ -49,19 +49,13 @@
     align-items: center;
   }
   main {
-    margin:3rem 1rem;
     text-align: center;
-  
-  .waves {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    bottom:-10px;
+  .section1 {
+    padding:3rem 2rem;
   }
-
   .section2 {
-    background-color: #35126a;
-    margin: 2rem;
+    background-color: $adopta-color-one;
+    padding:3rem 2rem;
     color:white;
     align-items: flex-start
   
@@ -76,6 +70,19 @@
     margin:2rem 0rem;
     width: 400px;
   }
+
+  .waves {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    bottom:-10px;
+    &-2 {
+background-color:$adopta-color-one;
+bottom:0px;
+top:-1px
+    }
+  }
+
   .subtitle {
   
     margin:2rem 2rem;
@@ -90,6 +97,15 @@
   .download-afiche {
     margin: 1rem;
   }
+}
+
+
+ul {
+  font-size: 16px;
+  padding: 1rem;
+  width: 100%;
+  list-style: none;
+  text-align: left;
 }
   @media only screen and (min-width: 768px) {
   
