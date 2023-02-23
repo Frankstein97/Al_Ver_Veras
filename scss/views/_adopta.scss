@@ -2,7 +2,12 @@
 /* ---------ADOPTA----------------- */
 
   /* ------- header ----*/
+// .section1 .section12 .section3 .section4 .section5{
+//   width: 100%;
+// }
+
   .afiche {
+    
     @include afiche;
     &-adopta {
         background-image: linear-gradient(
@@ -32,8 +37,9 @@
         transform: scale(1, 3);
         font-family: 'Moul', cursive;
       }
+
     }
-    
+
     &footer {
         border-top: 2px solid black;
         padding: 1rem;
@@ -42,6 +48,9 @@
         top: 10px;
         position: relative;
       }  
+      .nav-item-header {
+        margin-top: 2rem;
+      } 
   }
 
   /* ------- main ----*/
@@ -51,24 +60,76 @@
   main {
     text-align: center;
   .section1 {
+    width: 100%;
     padding:3rem 2rem;
+
+    img {
+      margin-top: 3rem;
+      scale: 1.2;
+    }
   }
   .section2 {
+    --bs-gutter-x: 0rem;
+    width: 100%;
     background-color: $adopta-color-one;
     padding:3rem 2rem;
     color:white;
-    align-items: flex-start
-  
+    align-items: flex-start;
+    
+    p {
+      width: 100%;
+      margin:1rem;
+      font-size: 16px;
   }
-  .section2 p {
-    margin:1rem;
-    font-size: 16px;
-  
-  }
-  .section2 img {
+   img {
     text-align: center;
     margin:2rem 0rem;
     width: 400px;
+  }
+  }
+
+  .section3 {
+    background-image: -moz-linear-gradient(red, blue, yellow);
+    margin-top:2rem;
+    h3 {
+      padding: 2rem;
+    }
+    p{
+      padding: 0.5rem 1.5rem;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+      margin:1rem;
+      li {
+        font-weight: bold;
+        font-size:16px;
+        padding: 1rem;
+      }
+      li:hover {
+        scale: 1.2;
+        transition: 1.5s;
+        font-size:16px;
+        padding: 1rem;
+      }
+    }
+    .more-info {
+      background-color:$adopta-color-three;
+      color: white;
+      padding: 1.5rem 2.5rem 5rem 2.5rem;
+      font-weight: bold;
+      border: 0rem;
+    }
+    .perro {
+      background-color: rgb(235, 210, 177);
+      margin-top: -1rem;
+      padding-top: 3rem;
+    }
+    img {
+    width: 17rem;
+    margin-top: 5rem;
+    position: absolute;
+  }
   }
 
   .waves {
@@ -97,15 +158,6 @@ top:-1px
   .download-afiche {
     margin: 1rem;
   }
-}
-
-
-ul {
-  font-size: 16px;
-  padding: 1rem;
-  width: 100%;
-  list-style: none;
-  text-align: left;
 }
   @media only screen and (min-width: 768px) {
   
