@@ -47,7 +47,11 @@
         font-size: 1.5rem;
         top: 10px;
         position: relative;
-      }  
+      } 
+      .nav-item {
+        width: 100px;
+        background-color: red;
+      }
       .nav-item-header {
         margin-top: 2rem;
       } 
@@ -89,7 +93,9 @@
   }
 
   .section3 {
-    background-image: -moz-linear-gradient(red, blue, yellow);
+    --bs-gutter-x: 0rem;
+    display: flex;
+    align-items: flex-start;
     margin-top:2rem;
     h3 {
       padding: 2rem;
@@ -112,8 +118,12 @@
         font-size:16px;
         padding: 1rem;
       }
+
     }
     .more-info {
+      height: 260px;
+      width: 100%;
+      margin: 0;
       background-color:$adopta-color-three;
       color: white;
       padding: 1.5rem 2.5rem 5rem 2.5rem;
@@ -122,8 +132,8 @@
     }
     .perro {
       background-color: rgb(235, 210, 177);
-      margin-top: -1rem;
-      padding-top: 3rem;
+      // margin-top: -1rem;
+      // padding-top: 3rem;
     }
     img {
     width: 17rem;
@@ -131,7 +141,45 @@
     position: absolute;
   }
   }
-
+  .section4 {
+    margin: 2rem 0rem;
+    img {
+      width: 50%;
+      margin: 1rem;
+    }
+  }
+  .section5 {
+    width: 100%;
+    margin-top:2rem;
+    h3 {
+      padding: 2rem;
+    }
+    p{
+      padding: 0.5rem 1.5rem;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+      margin:1rem;
+      a {
+        text-decoration: none;
+      }
+      li {
+        color: $adopta-color-one;
+        font-weight: bold;
+        font-size:16px;
+        padding: 1rem;
+        animation:  1s;
+      }
+      li:hover {
+        scale: 1.2;
+        color: $adopta-color-two;
+        transition: 1.2s;
+        font-size:16px;
+        padding: 1rem;
+      }
+    }
+  }
   .waves {
     width: 100%;
     position: relative;
@@ -182,12 +230,31 @@ top:-1px
    text-align-last: center;
    font-size: 18px;
   }
-  .section2 p {
-    margin:3rem 8rem;
-    font-size: 20px;
+  .section2 {
+    img {
+      width: 400px;
+    }
+    p {
+      margin:3rem 8rem;
+      font-size: 20px;
+    }
   }
-  .section2 img {
-    width: 400px;
+  .section3 { 
+    display: flex;
+    img {
+      margin-left: 39%;
+    }
+  }
+  .section4 {
+    margin: 2rem 0rem;
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    img {
+      width: 60%;
+      margin-top:2rem;
+    }
   }
   .fixed-bottom {
     margin-right: 2%!important;

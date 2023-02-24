@@ -205,6 +205,9 @@ h3 {
     font-size: 1.5rem;
     top: 10px;
     position: relative; }
+  .afiche .nav-item {
+    width: 100px;
+    background-color: red; }
   .afiche .nav-item-header {
     margin-top: 2rem; }
 
@@ -236,7 +239,9 @@ main {
       margin: 2rem 0rem;
       width: 400px; }
   main .section3 {
-    background-image: -moz-linear-gradient(red, blue, yellow);
+    --bs-gutter-x: 0rem;
+    display: flex;
+    align-items: flex-start;
     margin-top: 2rem; }
     main .section3 h3 {
       padding: 2rem; }
@@ -256,19 +261,50 @@ main {
         font-size: 16px;
         padding: 1rem; }
     main .section3 .more-info {
+      height: 260px;
+      width: 100%;
+      margin: 0;
       background-color: #ff8e44;
       color: white;
       padding: 1.5rem 2.5rem 5rem 2.5rem;
       font-weight: bold;
       border: 0rem; }
     main .section3 .perro {
-      background-color: #ebd2b1;
-      margin-top: -1rem;
-      padding-top: 3rem; }
+      background-color: #ebd2b1; }
     main .section3 img {
       width: 17rem;
       margin-top: 5rem;
       position: absolute; }
+  main .section4 {
+    margin: 2rem 0rem; }
+    main .section4 img {
+      width: 50%;
+      margin: 1rem; }
+  main .section5 {
+    width: 100%;
+    margin-top: 2rem; }
+    main .section5 h3 {
+      padding: 2rem; }
+    main .section5 p {
+      padding: 0.5rem 1.5rem; }
+    main .section5 ul {
+      list-style: none;
+      text-align: center;
+      margin: 1rem; }
+      main .section5 ul a {
+        text-decoration: none; }
+      main .section5 ul li {
+        color: #35126A;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 1rem;
+        animation: 1s; }
+      main .section5 ul li:hover {
+        scale: 1.2;
+        color: #f91362;
+        transition: 1.2s;
+        font-size: 16px;
+        padding: 1rem; }
   main .waves {
     width: 100%;
     position: relative;
@@ -303,11 +339,23 @@ main {
     margin: 6rem;
     text-align-last: center;
     font-size: 18px; }
+  .section2 img {
+    width: 400px; }
   .section2 p {
     margin: 3rem 8rem;
     font-size: 20px; }
-  .section2 img {
-    width: 400px; }
+  .section3 {
+    display: flex; }
+    .section3 img {
+      margin-left: 39%; }
+  .section4 {
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .section4 img {
+      width: 60%;
+      margin-top: 2rem; }
   .fixed-bottom {
     margin-right: 2% !important; }
   .fixed-bottom .btn {
