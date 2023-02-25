@@ -1,0 +1,26 @@
+footer {
+    margin-top:2rem;
+    padding:2rem;
+    background-color:#131313;
+    color: white;
+
+ul {
+    list-style: none;
+}
+a{
+    margin-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ffffff;
+}
+}
+.footer-container {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.copyright-text {
+    text-align: center;
+    padding-top: 2rem;
+}

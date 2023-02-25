@@ -173,7 +173,6 @@ h3 {
     right: 4%; } }
 
 /* ---------ADOPTA----------------- */
-/* ------- header ----*/
 .afiche {
   width: 100%;
   height: 100vh;
@@ -210,6 +209,11 @@ h3 {
     background-color: red; }
   .afiche .nav-item-header {
     margin-top: 2rem; }
+  .afiche .nav-item-header {
+    color: black;
+    text-decoration: none;
+    animation: 2seg;
+    margin-top: 2rem; }
 
 /* ------- main ----*/
 .row {
@@ -220,6 +224,8 @@ main {
   main .section1 {
     width: 100%;
     padding: 3rem 2rem; }
+    main .section1 p {
+      margin-top: 2rem; }
     main .section1 img {
       margin-top: 3rem;
       scale: 1.2; }
@@ -227,26 +233,29 @@ main {
     --bs-gutter-x: 0rem;
     width: 100%;
     background-color: #35126A;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
     color: white;
     align-items: flex-start; }
     main .section2 p {
+      margin-top: 3rem;
       width: 100%;
-      margin: 1rem;
       font-size: 16px; }
     main .section2 img {
       text-align: center;
-      margin: 2rem 0rem;
+      margin: 0.5rem 0rem;
       width: 400px; }
+    main .section2 h2 {
+      margin-top: 1rem;
+      font-size: 25px; }
   main .section3 {
     --bs-gutter-x: 0rem;
     display: flex;
-    align-items: flex-start;
-    margin-top: 2rem; }
+    align-items: flex-start; }
     main .section3 h3 {
-      padding: 2rem; }
+      margin-top: 4rem;
+      padding: 1rem; }
     main .section3 p {
-      padding: 0.5rem 1.5rem; }
+      padding: 0.5rem 1rem; }
     main .section3 ul {
       list-style: none;
       text-align: center;
@@ -261,61 +270,71 @@ main {
         font-size: 16px;
         padding: 1rem; }
     main .section3 .more-info {
-      height: 260px;
+      height: 200px;
       width: 100%;
-      margin: 0;
-      background-color: #ff8e44;
-      color: white;
-      padding: 1.5rem 2.5rem 5rem 2.5rem;
-      font-weight: bold;
-      border: 0rem; }
+      margin: 1rem 0rem;
+      padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+      font-weight: bold; }
+    main .section3 .gato {
+      color: black; }
+      main .section3 .gato .h3 {
+        background-color: #f91362; }
     main .section3 .perro {
-      background-color: #ebd2b1; }
+      color: white;
+      background-color: #989898; }
+      main .section3 .perro .more-info {
+        background-color: #5E5956; }
     main .section3 img {
       width: 17rem;
       margin-top: 5rem;
       position: absolute; }
   main .section4 {
+    width: 100%;
     margin: 2rem 0rem; }
     main .section4 img {
-      width: 50%;
-      margin: 1rem; }
-  main .section5 {
-    width: 100%;
-    margin-top: 2rem; }
-    main .section5 h3 {
-      padding: 2rem; }
-    main .section5 p {
-      padding: 0.5rem 1.5rem; }
-    main .section5 ul {
+      width: 100%;
+      margin-top: 3rem; }
+    main .section4-col-left h3 {
+      margin-top: 4rem;
+      padding: 1rem; }
+    main .section4-col-left p {
+      padding: 0.5rem 1rem; }
+    main .section4-col-left ul {
       list-style: none;
       text-align: center;
       margin: 1rem; }
-      main .section5 ul a {
+      main .section4-col-left ul a {
         text-decoration: none; }
-      main .section5 ul li {
+      main .section4-col-left ul li {
         color: #35126A;
         font-weight: bold;
         font-size: 16px;
         padding: 1rem;
         animation: 1s; }
-      main .section5 ul li:hover {
+      main .section4-col-left ul li:hover {
         scale: 1.2;
         color: #f91362;
         transition: 1.2s;
         font-size: 16px;
         padding: 1rem; }
+  main .section5 {
+    width: 100%;
+    padding: 1rem 2rem; }
+    main .section5 h2 {
+      margin-top: 3rem; }
+    main .section5 h5 {
+      margin: 2rem 1rem; }
   main .waves {
     width: 100%;
     position: relative;
     display: inline-block;
     bottom: -10px; }
-    main .waves-2 {
+    main .waves-top {
+      border-bottom: 4rem solid #35126A; }
+    main .waves-bottom {
       background-color: #35126A;
       bottom: 0px;
       top: -1px; }
-  main .subtitle {
-    margin: 2rem 2rem; }
   main .accordion {
     margin: 1rem; }
   main .download-btn {
@@ -324,38 +343,47 @@ main {
     margin: 1rem; }
 
 @media only screen and (min-width: 768px) {
-  /* >>> main   */
   main {
-    margin-top: 6rem;
+    margin-top: 1rem;
     text-align: center; }
-  main h1 {
-    padding: 0rem 3rem;
-    font-size: 3rem;
-    font-family: 'Moul';
-    /* width: 100%; */ }
-  main h2 {
-    font-size: 3rem; }
-  main p {
-    margin: 6rem;
-    text-align-last: center;
-    font-size: 18px; }
-  .section2 img {
-    width: 400px; }
-  .section2 p {
-    margin: 3rem 8rem;
-    font-size: 20px; }
+    main h1 {
+      padding: 0rem 3rem;
+      font-size: 2rem;
+      font-family: 'Moul'; }
+    main h2 {
+      font-size: 3rem; }
+    main p {
+      text-align-last: center;
+      font-size: 18px; }
+    main .section1 p {
+      margin: 4rem 3rem; }
+    main .section2 p {
+      margin: 1rem; }
+    main .section2 img {
+      width: 400px; }
+    main .section2 p {
+      margin-top: 5rem; }
+    main .section2 h2 {
+      margin-top: 5rem; }
   .section3 {
     display: flex; }
+    .section3 .perro {
+      margin-top: 5rem; }
+    .section3 .gato {
+      margin-top: 5rem;
+      border-right: 2px solid white; }
     .section3 img {
       margin-left: 39%; }
   .section4 {
-    margin: 2rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center; }
+    padding-top: 6rem;
+    text-align: center; }
     .section4 img {
       width: 60%;
       margin-top: 2rem; }
+  .section5 h2 {
+    font-size: 28px; }
+  .section5 img {
+    margin-top: 5rem; }
   .fixed-bottom {
     margin-right: 2% !important; }
   .fixed-bottom .btn {
@@ -463,34 +491,50 @@ main {
     top: 10px;
     position: relative; }
 
-/* --------navbar en views/pages --------*/
-.fixed-bottom {
-  margin-top: 5% !important;
-  margin-right: 5% !important; }
+footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #131313;
+  color: white; }
+  footer ul {
+    list-style: none; }
+  footer a {
+    margin-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff; }
 
-.btn-offcanvas {
-  float: right;
-  margin: 10px; }
+.footer-container {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.copyright-text {
+  text-align: center;
+  padding-top: 2rem; }
 
 /* ---------------navbar -------------- */
-.nav-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  color: black; }
+.navbar {
+  height: 4rem; }
 
-.nav-item {
-  color: black;
-  text-decoration: none;
-  animation: 2seg;
-  margin-top: 2rem; }
+.nav-list {
+  text-align: center; }
 
-.nav-item:hover {
-  color: black;
-  text-decoration: none;
-  transform: scale(1.1);
-  border-bottom: 1px solid rgba(65, 65, 65, 0.438); }
-
-.dropup-nav {
-  align-self: flex-start; }
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 6rem; }
+  .nav-list {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-evenly; }
+    .nav-list .nav-item {
+      margin: 0rem 1rem; }
+    .nav-list .nav-item:hover {
+      color: white;
+      text-decoration: none;
+      transform: scale(1.1);
+      border-bottom: 1px solid rgba(65, 65, 65, 0.438); } }
