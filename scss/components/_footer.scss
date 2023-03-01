@@ -1,10 +1,11 @@
 footer {
     margin-top:2rem;
-    padding:2rem;
+    padding-top:1rem;
     background-color:#131313;
     color: white;
 
 ul {
+
     list-style: none;
 }
 a{
@@ -15,6 +16,8 @@ a{
 }
 }
 .footer-container {
+    width: 100%;
+    padding-left: 1rem;
     color: white;
     display: flex;
     justify-content: space-around;

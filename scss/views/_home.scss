@@ -1,4 +1,13 @@
 /* Aqui empieza el css de el index */
+nav {
+  .title-home {
+  margin: 0 auto;
+  color:black;
+  text-decoration: none;
+}
+}
+
+
 /* se reaiza con grids de css, aun no esta definido como me gustaria la vista en desktop y mobile */
 .container {
     display: grid;

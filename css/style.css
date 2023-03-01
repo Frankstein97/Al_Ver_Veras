@@ -21,6 +21,11 @@ h3 {
 
 /* fuentes para textos que igual no funcionan */
 /* Aqui empieza el css de el index */
+nav .title-home {
+  margin: 0 auto;
+  color: black;
+  text-decoration: none; }
+
 /* se reaiza con grids de css, aun no esta definido como me gustaria la vista en desktop y mobile */
 .container {
   display: grid;
@@ -219,175 +224,184 @@ h3 {
 .row {
   align-items: center; }
 
-main {
-  text-align: center; }
-  main .section1 {
+#adopta {
+  text-align: center;
+  font-size: 12px; }
+  #adopta p {
+    font-size: 14px; }
+  #adopta .section1 {
     width: 100%;
     padding: 3rem 2rem; }
-    main .section1 p {
+    #adopta .section1 p {
       margin-top: 2rem; }
-    main .section1 img {
-      margin-top: 3rem;
-      scale: 1.2; }
-  main .section2 {
+    #adopta .section1 img {
+      margin-top: 3rem; }
+  #adopta .section2 {
     --bs-gutter-x: 0rem;
     width: 100%;
     background-color: #35126A;
     padding: 2rem 1rem;
     color: white;
     align-items: flex-start; }
-    main .section2 p {
+    #adopta .section2 p {
       margin-top: 3rem;
       width: 100%;
       font-size: 16px; }
-    main .section2 img {
+    #adopta .section2 img {
       text-align: center;
       margin: 0.5rem 0rem;
       width: 400px; }
-    main .section2 h2 {
+    #adopta .section2 h2 {
       margin-top: 1rem;
       font-size: 25px; }
-  main .section3 {
-    --bs-gutter-x: 0rem;
+    #adopta .section2 .accordion {
+      margin: 1rem; }
+  #adopta .section3 {
+    width: 100%;
     display: flex;
     align-items: flex-start; }
-    main .section3 h3 {
-      margin-top: 4rem;
+    #adopta .section3 h3 {
       padding: 1rem; }
-    main .section3 p {
-      padding: 0.5rem 1rem; }
-    main .section3 ul {
+    #adopta .section3 p {
+      padding: 0.5rem 0.5rem;
+      font-size: 16px; }
+    #adopta .section3 ul {
       list-style: none;
       text-align: center;
       margin: 1rem; }
-      main .section3 ul li {
+      #adopta .section3 ul li {
         font-weight: bold;
-        font-size: 16px;
-        padding: 1rem; }
-      main .section3 ul li:hover {
-        scale: 1.2;
+        font-size: 14px;
+        padding: 2rem 2rem; }
+      #adopta .section3 ul li:hover {
         transition: 1.5s;
-        font-size: 16px;
-        padding: 1rem; }
-    main .section3 .more-info {
+        font-size: 18px; }
+    #adopta .section3 .more-info {
       height: 200px;
       width: 100%;
       margin: 1rem 0rem;
-      padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+      padding: 1.5rem 0.5rem 0.5rem 1.5rem;
       font-weight: bold; }
-    main .section3 .gato {
+    #adopta .section3-left {
+      margin-top: 2rem;
       color: black; }
-      main .section3 .gato .h3 {
-        background-color: #f91362; }
-    main .section3 .perro {
+      #adopta .section3-left h3 {
+        color: #f91362; }
+    #adopta .section3-right {
+      margin-top: 5rem;
       color: white;
       background-color: #989898; }
-      main .section3 .perro .more-info {
+      #adopta .section3-right .more-info {
         background-color: #5E5956; }
-    main .section3 img {
-      width: 17rem;
-      margin-top: 5rem;
-      position: absolute; }
-  main .section4 {
+  #adopta .section4 {
     width: 100%;
     margin: 2rem 0rem; }
-    main .section4 img {
+    #adopta .section4 img {
       width: 100%;
       margin-top: 3rem; }
-    main .section4-col-left h3 {
+    #adopta .section4-left h3 {
       margin-top: 4rem;
       padding: 1rem; }
-    main .section4-col-left p {
+    #adopta .section4-left p {
       padding: 0.5rem 1rem; }
-    main .section4-col-left ul {
+    #adopta .section4-left ul {
       list-style: none;
       text-align: center;
       margin: 1rem; }
-      main .section4-col-left ul a {
+      #adopta .section4-left ul a {
         text-decoration: none; }
-      main .section4-col-left ul li {
+      #adopta .section4-left ul li {
         color: #35126A;
         font-weight: bold;
         font-size: 16px;
         padding: 1rem;
         animation: 1s; }
-      main .section4-col-left ul li:hover {
+      #adopta .section4-left ul li:hover {
         scale: 1.2;
         color: #f91362;
         transition: 1.2s;
         font-size: 16px;
         padding: 1rem; }
-  main .section5 {
-    width: 100%;
-    padding: 1rem 2rem; }
-    main .section5 h2 {
+  #adopta .section5 {
+    text-align: center;
+    font-size: 12px;
+    width: 100%; }
+    #adopta .section5 .download-afiche {
+      margin: 1rem; }
+    #adopta .section5 h2 {
       margin-top: 3rem; }
-    main .section5 h5 {
+    #adopta .section5 h5 {
       margin: 2rem 1rem; }
-  main .waves {
+    #adopta .section5 .download-btn {
+      margin: 1rem; }
+    #adopta .section5 .download-afiche {
+      margin: 1rem; }
+  #adopta .waves {
     width: 100%;
     position: relative;
     display: inline-block;
     bottom: -10px; }
-    main .waves-top {
+    #adopta .waves-top {
       border-bottom: 4rem solid #35126A; }
-    main .waves-bottom {
+    #adopta .waves-bottom {
       background-color: #35126A;
       bottom: 0px;
       top: -1px; }
-  main .accordion {
-    margin: 1rem; }
-  main .download-btn {
-    margin: 1rem; }
-  main .download-afiche {
-    margin: 1rem; }
 
 @media only screen and (min-width: 768px) {
-  main {
-    margin-top: 1rem;
+  #adopta {
     text-align: center; }
-    main h1 {
-      padding: 0rem 3rem;
-      font-size: 2rem;
-      font-family: 'Moul'; }
-    main h2 {
-      font-size: 3rem; }
-    main p {
-      text-align-last: center;
+    #adopta p {
       font-size: 18px; }
-    main .section1 p {
-      margin: 4rem 3rem; }
-    main .section2 p {
-      margin: 1rem; }
-    main .section2 img {
-      width: 400px; }
-    main .section2 p {
-      margin-top: 5rem; }
-    main .section2 h2 {
-      margin-top: 5rem; }
-  .section3 {
-    display: flex; }
-    .section3 .perro {
-      margin-top: 5rem; }
-    .section3 .gato {
+    #adopta .section1 {
+      margin-top: 1rem; }
+      #adopta .section1-left {
+        margin-top: 2rem; }
+      #adopta .section1 p {
+        font-size: 20px;
+        margin: 4rem 3rem; }
+      #adopta .section1 h1 {
+        padding: 0rem 3rem;
+        font-size: 2rem;
+        font-family: 'Moul'; }
+    #adopta .section2-left {
       margin-top: 5rem;
-      border-right: 2px solid white; }
-    .section3 img {
-      margin-left: 39%; }
-  .section4 {
-    padding-top: 6rem;
-    text-align: center; }
-    .section4 img {
-      width: 60%;
-      margin-top: 2rem; }
-  .section5 h2 {
-    font-size: 28px; }
-  .section5 img {
-    margin-top: 5rem; }
-  .fixed-bottom {
-    margin-right: 2% !important; }
-  .fixed-bottom .btn {
-    margin-bottom: 3rem; } }
+      padding: 0rem 3rem; }
+    #adopta .section2-right {
+      margin-top: 5rem; }
+    #adopta .section2 .accordion {
+      margin: 1rem 3rem; }
+    #adopta .section2 p {
+      margin: 1rem; }
+    #adopta .section2 img {
+      width: 400px; }
+    #adopta .section2 h2 {
+      font-size: 2rem; }
+    #adopta .section3 {
+      width: 100%; }
+      #adopta .section3-left {
+        margin-top: 6rem; }
+      #adopta .section3-right {
+        margin-top: 6rem; }
+      #adopta .section3 p {
+        padding: 0.5rem 1rem; }
+      #adopta .section3 ul li {
+        padding: 1rem 2rem; }
+    #adopta .section4 {
+      padding-top: 6rem;
+      text-align: center; }
+      #adopta .section4 img {
+        width: 60%;
+        margin-top: 2rem; }
+    #adopta .section5-left {
+      margin-top: 3rem;
+      padding: 1rem 3rem; }
+    #adopta .section5-right {
+      margin-top: 3rem; }
+    #adopta .section5 h2 {
+      font-size: 28px; }
+    #adopta .section5 img {
+      width: 14rem; } }
 
 /* ---------CLOSET LGBT----------------- */
 /* ------- header ----*/
@@ -400,21 +414,29 @@ main {
   justify-content: space-evenly;
   align-items: center; }
   .afiche-lgbt {
-    background-image: linear-gradient(0deg, #d61a1a 0%, #d75e17 20%, #e4d015 40%, #28d910 60%, #1b15d2 80%, #d314c6 100%); }
+    background-image: linear-gradient(0deg, #8c0183 0%, #1b15d2 20%, #28d910 40%, #e4d015 60%, #d75e17 80%, #d61a1a 100%); }
     .afiche-lgbt .title-1 {
-      font-size: 2.9rem;
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 3rem;
       transform: scale(1, 2);
-      font-family: 'Coda Caption', sans-serif; }
+      font-family: 'Moul', cursive; }
     .afiche-lgbt .title-2 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
       font-size: 2.7rem;
       transform: scale(1, 2.5);
       font-family: 'Roboto Mono', monospace; }
     .afiche-lgbt img {
-      width: 15rem; }
+      width: 10rem; }
     .afiche-lgbt .title-3 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
       font-size: 2rem;
       transform: scale(1, 3);
       font-family: 'Moul', cursive; }
+    .afiche-lgbt .title-4 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 2.4rem;
+      transform: scale(1, 3);
+      font-family: 'Roboto Mono', monospace; }
   .afichefooter {
     border-top: 2px solid black;
     padding: 1rem;
@@ -422,6 +444,165 @@ main {
     font-size: 1.5rem;
     top: 10px;
     position: relative; }
+
+.row {
+  align-items: center; }
+
+#adopta {
+  text-align: center;
+  font-size: 12px; }
+  #adopta p {
+    font-size: 14px; }
+  #adopta .section1 {
+    width: 100%;
+    padding: 3rem 2rem; }
+    #adopta .section1 p {
+      margin-top: 2rem; }
+    #adopta .section1 img {
+      margin-top: 3rem; }
+  #adopta .section2 {
+    --bs-gutter-x: 0rem;
+    width: 100%;
+    background-color: #35126A;
+    padding: 2rem 1rem;
+    color: white;
+    align-items: flex-start; }
+    #adopta .section2 p {
+      margin-top: 3rem;
+      width: 100%;
+      font-size: 16px; }
+    #adopta .section2 img {
+      text-align: center;
+      margin: 0.5rem 0rem;
+      width: 400px; }
+    #adopta .section2 h2 {
+      margin-top: 1rem;
+      font-size: 25px; }
+    #adopta .section2 .accordion {
+      margin: 1rem; }
+  #adopta .section3 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start; }
+    #adopta .section3 h3 {
+      padding: 1rem; }
+    #adopta .section3 p {
+      padding: 0.5rem 0.5rem;
+      font-size: 16px; }
+    #adopta .section3 ul {
+      list-style: none;
+      text-align: center;
+      margin: 1rem; }
+      #adopta .section3 ul li {
+        font-weight: bold;
+        font-size: 14px;
+        padding: 2rem 2rem; }
+      #adopta .section3 ul li:hover {
+        transition: 1.5s;
+        font-size: 18px; }
+    #adopta .section3 .more-info {
+      height: 200px;
+      width: 100%;
+      margin: 1rem 0rem;
+      padding: 1.5rem 0.5rem 0.5rem 1.5rem;
+      font-weight: bold; }
+    #adopta .section3-left {
+      margin-top: 2rem;
+      color: black; }
+      #adopta .section3-left h3 {
+        color: #f91362; }
+    #adopta .section3-right {
+      margin-top: 5rem;
+      color: white;
+      background-color: #989898; }
+      #adopta .section3-right .more-info {
+        background-color: #5E5956; }
+  #adopta .section4 {
+    width: 100%;
+    margin: 2rem 0rem; }
+    #adopta .section4 img {
+      width: 100%;
+      margin-top: 3rem; }
+    #adopta .section4-left h3 {
+      margin-top: 4rem;
+      padding: 1rem; }
+    #adopta .section4-left p {
+      padding: 0.5rem 1rem; }
+    #adopta .section4-left ul {
+      list-style: none;
+      text-align: center;
+      margin: 1rem; }
+      #adopta .section4-left ul a {
+        text-decoration: none; }
+      #adopta .section4-left ul li {
+        color: #35126A;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 1rem;
+        animation: 1s; }
+      #adopta .section4-left ul li:hover {
+        scale: 1.2;
+        color: #f91362;
+        transition: 1.2s;
+        font-size: 16px;
+        padding: 1rem; }
+  #adopta .section5-left {
+    margin-top: 3rem;
+    padding: 1rem 3rem; }
+  #adopta .section5-right {
+    margin-top: 3rem; }
+  #adopta .section5 h2 {
+    font-size: 28px; }
+  #adopta .section5 img {
+    width: 14rem; }
+
+@media only screen and (min-width: 768px) {
+  #closet {
+    text-align: center; }
+    #closet p {
+      font-size: 18px; }
+    #closet .section1 {
+      width: 100%; }
+      #closet .section1-left {
+        margin-top: 3rem; }
+      #closet .section1-right {
+        margin-top: 3rem; }
+    #closet .section2 {
+      width: 100%; }
+      #closet .section2-left {
+        margin-top: 3rem; }
+      #closet .section2-right {
+        margin-top: 3rem; }
+    #closet .section3 {
+      width: 100%; }
+      #closet .section3-left {
+        margin-top: 3rem; }
+      #closet .section3-right {
+        margin-top: 3rem; }
+      #closet .section3 p {
+        padding: 0.5rem 1rem; }
+      #closet .section3 ul li {
+        padding: 1rem 2rem; }
+    #closet .section4 {
+      padding-top: 6rem;
+      text-align: center; }
+      #closet .section4 img {
+        width: 60%;
+        margin-top: 2rem; }
+    #closet .section5 {
+      text-align: center;
+      font-size: 12px;
+      width: 100%; }
+      #closet .section5 .download-afiche {
+        margin: 1rem; }
+      #closet .section5 h2 {
+        margin-top: 3rem; }
+      #closet .section5 h5 {
+        margin: 2rem 1rem; }
+      #closet .section5 .download-btn {
+        margin: 1rem; }
+      #closet .section5 .download-afiche {
+        margin: 1rem; } }
 
 /* ---------PAREN DE FUMIGARNOS----------------- */
 /* ------- header ----*/
@@ -493,7 +674,7 @@ main {
 
 footer {
   margin-top: 2rem;
-  padding: 2rem;
+  padding-top: 1rem;
   background-color: #131313;
   color: white; }
   footer ul {
@@ -505,6 +686,8 @@ footer {
     color: #ffffff; }
 
 .footer-container {
+  width: 100%;
+  padding-left: 1rem;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -515,13 +698,14 @@ footer {
   padding-top: 2rem; }
 
 /* ---------------navbar -------------- */
-.navbar {
-  height: 4rem; }
-
 .nav-list {
   text-align: center; }
 
-@media only screen and (min-width: 768px) {
+.navbar-toggler {
+  opacity: 0.5;
+  background-color: #989898 !important; }
+
+@media only screen and (min-width: 992px) {
   .navbar {
     height: 6rem; }
   .nav-list {

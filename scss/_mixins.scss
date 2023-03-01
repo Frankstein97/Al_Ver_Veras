@@ -7,3 +7,46 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+@mixin section5 () {
+    text-align: center;
+    font-size: 12px;
+    .download-afiche {margin: 1rem;}
+    width: 100%;
+
+    h2 {
+      margin-top: 3rem;
+    }
+
+    h5 {
+      margin: 2rem 1rem;
+    }
+
+    .download-btn {
+      margin: 1rem
+    }
+
+    .download-afiche {
+      margin: 1rem;
+    }
+  }
+
+  @mixin section5-responsive () {
+
+    &-left {
+        margin-top: 3rem;
+        padding: 1rem 3rem;
+        
+      }
+      &-right{
+        margin-top:3rem;
+        
+      }
+      h2 {
+        font-size: 28px;
+      }
+  
+      img {
+        width: 14rem;
+      }
+  }
