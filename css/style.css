@@ -325,6 +325,7 @@ nav .title-home {
   #adopta .section5 {
     text-align: center;
     font-size: 12px;
+    background-color: red;
     width: 100%; }
     #adopta .section5 .download-afiche {
       margin: 1rem; }
@@ -592,6 +593,7 @@ nav .title-home {
     #closet .section5 {
       text-align: center;
       font-size: 12px;
+      background-color: red;
       width: 100%; }
       #closet .section5 .download-afiche {
         margin: 1rem; }
