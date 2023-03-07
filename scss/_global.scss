@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-  
+    ::-webkit-scrollbar {
+      display: none;
+  }
+   
   }
 
 // Definiendo fuentes para headers y bodys fijos
+#adopta {
+  ::-webkit-scrollbar {
+    display: none;
+}
+}
 h1 {
     padding:0.6rem;
     font-size: 1.4rem;

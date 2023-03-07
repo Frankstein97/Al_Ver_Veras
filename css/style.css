@@ -1,8 +1,14 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none; }
+  * ::-webkit-scrollbar {
+    display: none; }
+
+#adopta ::-webkit-scrollbar {
+  display: none; }
 
 h1 {
   padding: 0.6rem;
@@ -210,8 +216,7 @@ nav .title-home {
     top: 10px;
     position: relative; }
   .afiche .nav-item {
-    width: 100px;
-    background-color: red; }
+    width: 100px; }
   .afiche .nav-item-header {
     margin-top: 2rem; }
   .afiche .nav-item-header {
@@ -283,12 +288,12 @@ nav .title-home {
       padding: 1.5rem 0.5rem 0.5rem 1.5rem;
       font-weight: bold; }
     #adopta .section3-left {
-      margin-top: 2rem;
+      margin-top: 3rem;
       color: black; }
       #adopta .section3-left h3 {
         color: #f91362; }
     #adopta .section3-right {
-      margin-top: 5rem;
+      margin-top: 3rem;
       color: white;
       background-color: #989898; }
       #adopta .section3-right .more-info {
@@ -325,7 +330,6 @@ nav .title-home {
   #adopta .section5 {
     text-align: center;
     font-size: 12px;
-    background-color: red;
     width: 100%; }
     #adopta .section5 .download-afiche {
       margin: 1rem; }
@@ -366,10 +370,10 @@ nav .title-home {
         font-size: 2rem;
         font-family: 'Moul'; }
     #adopta .section2-left {
-      margin-top: 5rem;
+      margin-top: 3rem;
       padding: 0rem 3rem; }
     #adopta .section2-right {
-      margin-top: 5rem; }
+      margin-top: 3rem; }
     #adopta .section2 .accordion {
       margin: 1rem 3rem; }
     #adopta .section2 p {
@@ -381,8 +385,11 @@ nav .title-home {
     #adopta .section3 {
       width: 100%; }
       #adopta .section3-left {
+        width: 50%;
         margin-top: 6rem; }
       #adopta .section3-right {
+        width: 50%;
+        margin-right: 0px;
         margin-top: 6rem; }
       #adopta .section3 p {
         padding: 0.5rem 1rem; }
@@ -449,112 +456,112 @@ nav .title-home {
 .row {
   align-items: center; }
 
-#adopta {
+#closet {
   text-align: center;
   font-size: 12px; }
-  #adopta p {
+  #closet p {
     font-size: 14px; }
-  #adopta .section1 {
+  #closet .section1 {
     width: 100%;
     padding: 3rem 2rem; }
-    #adopta .section1 p {
+    #closet .section1 p {
       margin-top: 2rem; }
-    #adopta .section1 img {
+    #closet .section1 img {
       margin-top: 3rem; }
-  #adopta .section2 {
+  #closet .section2 {
     --bs-gutter-x: 0rem;
     width: 100%;
     background-color: #35126A;
     padding: 2rem 1rem;
     color: white;
     align-items: flex-start; }
-    #adopta .section2 p {
+    #closet .section2 p {
       margin-top: 3rem;
       width: 100%;
       font-size: 16px; }
-    #adopta .section2 img {
+    #closet .section2 img {
       text-align: center;
       margin: 0.5rem 0rem;
       width: 400px; }
-    #adopta .section2 h2 {
+    #closet .section2 h2 {
       margin-top: 1rem;
       font-size: 25px; }
-    #adopta .section2 .accordion {
+    #closet .section2 .accordion {
       margin: 1rem; }
-  #adopta .section3 {
+  #closet .section3 {
     width: 100%;
     display: flex;
     align-items: flex-start; }
-    #adopta .section3 h3 {
+    #closet .section3 h3 {
       padding: 1rem; }
-    #adopta .section3 p {
+    #closet .section3 p {
       padding: 0.5rem 0.5rem;
       font-size: 16px; }
-    #adopta .section3 ul {
+    #closet .section3 ul {
       list-style: none;
       text-align: center;
       margin: 1rem; }
-      #adopta .section3 ul li {
+      #closet .section3 ul li {
         font-weight: bold;
         font-size: 14px;
         padding: 2rem 2rem; }
-      #adopta .section3 ul li:hover {
+      #closet .section3 ul li:hover {
         transition: 1.5s;
         font-size: 18px; }
-    #adopta .section3 .more-info {
+    #closet .section3 .more-info {
       height: 200px;
       width: 100%;
       margin: 1rem 0rem;
       padding: 1.5rem 0.5rem 0.5rem 1.5rem;
       font-weight: bold; }
-    #adopta .section3-left {
+    #closet .section3-left {
       margin-top: 2rem;
       color: black; }
-      #adopta .section3-left h3 {
+      #closet .section3-left h3 {
         color: #f91362; }
-    #adopta .section3-right {
+    #closet .section3-right {
       margin-top: 5rem;
       color: white;
       background-color: #989898; }
-      #adopta .section3-right .more-info {
+      #closet .section3-right .more-info {
         background-color: #5E5956; }
-  #adopta .section4 {
+  #closet .section4 {
     width: 100%;
     margin: 2rem 0rem; }
-    #adopta .section4 img {
+    #closet .section4 img {
       width: 100%;
       margin-top: 3rem; }
-    #adopta .section4-left h3 {
+    #closet .section4-left h3 {
       margin-top: 4rem;
       padding: 1rem; }
-    #adopta .section4-left p {
+    #closet .section4-left p {
       padding: 0.5rem 1rem; }
-    #adopta .section4-left ul {
+    #closet .section4-left ul {
       list-style: none;
       text-align: center;
       margin: 1rem; }
-      #adopta .section4-left ul a {
+      #closet .section4-left ul a {
         text-decoration: none; }
-      #adopta .section4-left ul li {
+      #closet .section4-left ul li {
         color: #35126A;
         font-weight: bold;
         font-size: 16px;
         padding: 1rem;
         animation: 1s; }
-      #adopta .section4-left ul li:hover {
+      #closet .section4-left ul li:hover {
         scale: 1.2;
         color: #f91362;
         transition: 1.2s;
         font-size: 16px;
         padding: 1rem; }
-  #adopta .section5-left {
+  #closet .section5-left {
     margin-top: 3rem;
     padding: 1rem 3rem; }
-  #adopta .section5-right {
+  #closet .section5-right {
     margin-top: 3rem; }
-  #adopta .section5 h2 {
+  #closet .section5 h2 {
     font-size: 28px; }
-  #adopta .section5 img {
+  #closet .section5 img {
     width: 14rem; }
 
 @media only screen and (min-width: 768px) {
@@ -593,7 +600,6 @@ nav .title-home {
     #closet .section5 {
       text-align: center;
       font-size: 12px;
-      background-color: red;
       width: 100%; }
       #closet .section5 .download-afiche {
         margin: 1rem; }
@@ -654,11 +660,13 @@ nav .title-home {
     background-image: linear-gradient(0deg, #1e4ba5 0%, #136bf9 25%, #8a2c84 100%); }
     .afiche-petroleras .title-1 {
       font-size: 2.9rem;
-      transform: scale(1, 3);
+      padding-top: 1rem;
+      transform: scale(1, 4);
       font-family: 'Coda Caption', sans-serif; }
     .afiche-petroleras .title-2 {
       font-size: 2.7rem;
-      transform: scale(1, 2.5);
+      padding-bottom: 1.5rem;
+      transform: scale(1, 3);
       font-family: 'Roboto Mono', monospace; }
     .afiche-petroleras img {
       width: 15rem; }
@@ -702,6 +710,10 @@ footer {
 /* ---------------navbar -------------- */
 .nav-list {
   text-align: center; }
+
+.nav-link-campañas {
+  background-color: #989898;
+  width: 20%; }
 
 .navbar-toggler {
   opacity: 0.5;
