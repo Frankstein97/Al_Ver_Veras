@@ -1,47 +1,351 @@
+/* ---------ADOPTA------------- */
 
-/* ---------ADOPTA----------------- */
+/* ------- header (mobile)----*/
+.afiche {
+  width: 100%;
+  @include afiche;
 
-  /* ------- header ----*/
-  .afiche {
-    @include afiche;
-    &-petroleras {
-        background-image: linear-gradient(
-            0deg,
-            #1e4ba5 0%,
-            #136bf9 25%,
-            #8a2c84 100%
-          );
-      .title-1 {
-        font-size: 2.9rem;
-        padding-top: 1rem;
-        transform: scale(1, 4);
-        font-family: 'Coda Caption', sans-serif;
+  &-petroleras {
+    background-image: linear-gradient(0deg,
+        #1e4ba5 0%,
+        #136bf9 25%,
+        #8a2c84 100%);
+
+    .title-1 {
+      font-size: 2.9rem;
+      padding-top: 1.5rem;
+      transform: scale(1, 4);
+      font-family: 'Coda Caption', sans-serif;
+    }
+
+    .title-2 {
+      font-size: 2.7rem;
+      padding-bottom: 1.5rem;
+      transform: scale(1, 3);
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    img {
+      padding-top: 1rem;
+      width: 12rem;
+    }
+
+    .title-3 {
+      font-size: 2.7rem;
+      transform: scale(1, 3);
+      font-family: 'Moul', cursive;
+    }
+  }
+
+  &footer {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative;
+  }
+}
+
+/* ------- main (mobile) ----*/
+#petroleras {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section1 {
+    width: 100%;
+    margin: 0;
+
+    &-left {
+      margin-top: 5rem;
+
+      p {
+        padding: 1rem 1rem;
       }
-      
-      .title-2 {
-        font-size: 2.7rem;
-        padding-bottom: 1.5rem;
-        transform: scale(1, 3);
-        font-family: 'Roboto Mono', monospace;
-      }
-      
-      img {
-        width: 15rem;
-      }
-      .title-3 {
-        font-size: 2.8rem;
-        transform: scale(1, 3);
-        font-family: 'Moul', cursive;
+
+      strong {
+        color: red;
       }
     }
-    
-    &footer {
-        border-top: 2px solid black;
-        padding: 1rem;
-        width: 80%;
-        font-size: 1.5rem;
-        top: 10px;
-        position: relative;
-      }  
+
+    &-right {
+      margin-top: 5rem;
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+    }
   }
-   
+
+  .section2 {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-top: 4rem;
+
+    h2 {
+
+      margin-top: 1rem;
+      padding: 1rem 0rem;
+    }
+
+    &-left,
+    &-right {
+      box-shadow: 0px 10px 15px -5px $petroleras-color-one;
+      padding: 1rem 1rem;
+    }
+
+    &-middle {
+      padding: 1rem 1rem;
+
+      .logo {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo-img {
+          width: 100px;
+          height: auto;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem;
+
+    h2 {
+      margin-top: 2rem;
+      padding: 1rem 1rem;
+    }
+
+    h3 {
+      color: $petroleras-color-three;
+    }
+
+    .icon {
+      width: 50px;
+      margin: 1.5rem;
+    }
+  }
+
+  .section4 {
+    width: 100%;
+    margin: 0;
+    padding-top: 5rem;
+
+    h2 {
+      color: $petroleras-color-two;
+      padding: 1rem 1rem;
+    }
+
+    &-left {
+      padding-bottom: 2rem;
+    }
+
+    &-right {
+      padding-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 0px 1px #136bf9;
+      }
+    }
+  }
+
+  .section5 {
+    @include section5-responsive
+}
+}
+
+// Query para la pantalla compelta (desktop)
+@media only screen and (min-width: 768px) {
+  #petroleras {
+    p {
+      font-size: 18px;
+    }
+
+    .section1 {
+      width: 100%;
+      margin-top: -5rem;
+
+      &-left {
+        transform: skew(45deg);
+        background-color: white;
+        z-index: 1;
+        position: relative;
+
+        .section-left-text {
+          height: 36rem;
+          transform: skew(-45deg);
+
+          h2 {
+            margin-top: 5rem;
+            padding: 5% 40% 0% 3%;
+
+            strong {
+              margin-bottom: 4rem;
+              scale: 1.4;
+            }
+
+          }
+
+          .text1 {
+            padding: 5% 26% 0% 3%;
+
+          }
+
+          .text2 {
+            background-color: white;
+            padding: 5% 16% 0% 3%;
+          }
+        }
+      }
+
+
+      &-right {
+        margin-top: 0rem;
+
+        .image {
+          z-index: -1;
+          position: relative;
+          width: 250%;
+          height: 36rem;
+          right: 120%;
+        }
+
+        img {
+          height: 100%;
+          object-fit: cover;
+
+        }
+      }
+    }
+
+    .section2 {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+
+      h2 {
+        margin-top: 5rem;
+        padding: 1rem 0rem;
+      }
+
+      .shape1 {
+        visibility: hidden;
+        // width: 100%;
+        // height: 100%;
+        // position: absolute;
+        // z-index: -10;
+        // scale: 1.2;
+        // right: 0rem;
+        // left: 0rem;
+
+      }
+
+      &-left,
+      &-right {
+        word-wrap: break-word;
+        box-sizing: border-box;
+        height: 30rem;
+        border: 0rem 1rem;
+        padding: 1rem 2rem;
+        overflow: auto;
+        box-shadow: 0px 10px 5px -5px $petroleras-color-one;
+
+      }
+
+      &-middle {
+        padding: 1rem 4rem;
+
+        .logo {
+          .logo-img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .section3 {
+      width: 100%;
+      margin: 0;
+
+      h3 {
+        margin: 1rem;
+      }
+
+      &-left,
+      &-right {
+        word-wrap: break-word;
+        box-sizing: border-box;
+        height: 40rem;
+        border: 0rem 1rem;
+        padding: 1rem 6rem;
+        overflow: auto;
+        box-shadow: 0px 10px 5px -5px $petroleras-color-one;
+
+      }
+    }
+
+    .section4 {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 2rem;
+      
+      h2 {
+        margin: 1rem;
+      }
+      .accordion {
+        font-size: 16px;
+        .accordion-button {
+          font-size: 18px;
+        }
+      }
+      &-left{
+        padding:1rem 2rem;
+        p{
+        padding-bottom: 4rem;
+      }
+      }
+      &-right{
+        padding:1rem 2rem;
+        p{
+          box-shadow: none ;
+        }
+      img {
+        border-radius: 8px;
+        width: 50%;
+        margin-top: 2rem;
+      }
+    }
+    }
+
+      .section5 {
+     
+        @include section5;
+        img {
+        width: 15rem;
+        }
+      }
+  }
+}

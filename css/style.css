@@ -7,8 +7,8 @@
   * ::-webkit-scrollbar {
     display: none; }
 
-#adopta ::-webkit-scrollbar {
-  display: none; }
+p {
+  font-size: 16px; }
 
 h1 {
   padding: 0.6rem;
@@ -646,9 +646,10 @@ nav .title-home {
     top: 10px;
     position: relative; }
 
-/* ---------ADOPTA----------------- */
-/* ------- header ----*/
+/* ---------ADOPTA------------- */
+/* ------- header (mobile)----*/
 .afiche {
+  width: 100%;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -660,7 +661,7 @@ nav .title-home {
     background-image: linear-gradient(0deg, #1e4ba5 0%, #136bf9 25%, #8a2c84 100%); }
     .afiche-petroleras .title-1 {
       font-size: 2.9rem;
-      padding-top: 1rem;
+      padding-top: 1.5rem;
       transform: scale(1, 4);
       font-family: 'Coda Caption', sans-serif; }
     .afiche-petroleras .title-2 {
@@ -669,9 +670,10 @@ nav .title-home {
       transform: scale(1, 3);
       font-family: 'Roboto Mono', monospace; }
     .afiche-petroleras img {
-      width: 15rem; }
+      padding-top: 1rem;
+      width: 12rem; }
     .afiche-petroleras .title-3 {
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       transform: scale(1, 3);
       font-family: 'Moul', cursive; }
   .afichefooter {
@@ -681,6 +683,201 @@ nav .title-home {
     font-size: 1.5rem;
     top: 10px;
     position: relative; }
+
+/* ------- main (mobile) ----*/
+#petroleras {
+  width: 100%;
+  text-align: center;
+  font-size: 12px; }
+  #petroleras ::-webkit-scrollbar {
+    display: none; }
+  #petroleras .section1 {
+    width: 100%;
+    margin: 0; }
+    #petroleras .section1-left {
+      margin-top: 5rem; }
+      #petroleras .section1-left p {
+        padding: 1rem 1rem; }
+      #petroleras .section1-left strong {
+        color: red; }
+    #petroleras .section1-right {
+      margin-top: 5rem;
+      padding: 0; }
+      #petroleras .section1-right img {
+        width: 100%; }
+  #petroleras .section2 {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-top: 4rem; }
+    #petroleras .section2 h2 {
+      margin-top: 1rem;
+      padding: 1rem 0rem; }
+    #petroleras .section2-left, #petroleras .section2-right {
+      box-shadow: 0px 10px 15px -5px #1e4ba5;
+      padding: 1rem 1rem; }
+    #petroleras .section2-middle {
+      padding: 1rem 1rem; }
+      #petroleras .section2-middle .logo {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; }
+        #petroleras .section2-middle .logo .logo-img {
+          width: 100px;
+          height: auto;
+          padding: 1rem; }
+  #petroleras .section3 {
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem; }
+    #petroleras .section3 h2 {
+      margin-top: 2rem;
+      padding: 1rem 1rem; }
+    #petroleras .section3 h3 {
+      color: #8a2c84; }
+    #petroleras .section3 .icon {
+      width: 50px;
+      margin: 1.5rem; }
+  #petroleras .section4 {
+    width: 100%;
+    margin: 0;
+    padding-top: 5rem; }
+    #petroleras .section4 h2 {
+      color: #136bf9;
+      padding: 1rem 1rem; }
+    #petroleras .section4-left {
+      padding-bottom: 2rem; }
+    #petroleras .section4-right {
+      padding-bottom: 2rem; }
+      #petroleras .section4-right img {
+        width: 100%; }
+      #petroleras .section4-right p {
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        box-shadow: 0px 1px 0px 1px #136bf9; }
+  #petroleras .section5-left {
+    margin-top: 3rem;
+    padding: 1rem 3rem; }
+  #petroleras .section5-right {
+    margin-top: 3rem; }
+  #petroleras .section5 h2 {
+    font-size: 28px; }
+  #petroleras .section5 img {
+    width: 14rem; }
+
+@media only screen and (min-width: 768px) {
+  #petroleras p {
+    font-size: 18px; }
+  #petroleras .section1 {
+    width: 100%;
+    margin-top: -5rem; }
+    #petroleras .section1-left {
+      transform: skew(45deg);
+      background-color: white;
+      z-index: 1;
+      position: relative; }
+      #petroleras .section1-left .section-left-text {
+        height: 36rem;
+        transform: skew(-45deg); }
+        #petroleras .section1-left .section-left-text h2 {
+          margin-top: 5rem;
+          padding: 5% 40% 0% 3%; }
+          #petroleras .section1-left .section-left-text h2 strong {
+            margin-bottom: 4rem;
+            scale: 1.4; }
+        #petroleras .section1-left .section-left-text .text1 {
+          padding: 5% 26% 0% 3%; }
+        #petroleras .section1-left .section-left-text .text2 {
+          background-color: white;
+          padding: 5% 16% 0% 3%; }
+    #petroleras .section1-right {
+      margin-top: 0rem; }
+      #petroleras .section1-right .image {
+        z-index: -1;
+        position: relative;
+        width: 250%;
+        height: 36rem;
+        right: 120%; }
+      #petroleras .section1-right img {
+        height: 100%;
+        object-fit: cover; }
+  #petroleras .section2 {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1; }
+    #petroleras .section2 h2 {
+      margin-top: 5rem;
+      padding: 1rem 0rem; }
+    #petroleras .section2 .shape1 {
+      visibility: hidden; }
+    #petroleras .section2-left, #petroleras .section2-right {
+      word-wrap: break-word;
+      box-sizing: border-box;
+      height: 30rem;
+      border: 0rem 1rem;
+      padding: 1rem 2rem;
+      overflow: auto;
+      box-shadow: 0px 10px 5px -5px #1e4ba5; }
+    #petroleras .section2-middle {
+      padding: 1rem 4rem; }
+      #petroleras .section2-middle .logo .logo-img {
+        width: 150px; }
+  #petroleras .section3 {
+    width: 100%;
+    margin: 0; }
+    #petroleras .section3 h3 {
+      margin: 1rem; }
+    #petroleras .section3-left, #petroleras .section3-right {
+      word-wrap: break-word;
+      box-sizing: border-box;
+      height: 40rem;
+      border: 0rem 1rem;
+      padding: 1rem 6rem;
+      overflow: auto;
+      box-shadow: 0px 10px 5px -5px #1e4ba5; }
+  #petroleras .section4 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem; }
+    #petroleras .section4 h2 {
+      margin: 1rem; }
+    #petroleras .section4 .accordion {
+      font-size: 16px; }
+      #petroleras .section4 .accordion .accordion-button {
+        font-size: 18px; }
+    #petroleras .section4-left {
+      padding: 1rem 2rem; }
+      #petroleras .section4-left p {
+        padding-bottom: 4rem; }
+    #petroleras .section4-right {
+      padding: 1rem 2rem; }
+      #petroleras .section4-right p {
+        box-shadow: none; }
+      #petroleras .section4-right img {
+        border-radius: 8px;
+        width: 50%;
+        margin-top: 2rem; }
+  #petroleras .section5 {
+    text-align: center;
+    font-size: 12px;
+    width: 100%; }
+    #petroleras .section5 .download-afiche {
+      margin: 1rem; }
+    #petroleras .section5 h2 {
+      margin-top: 3rem; }
+    #petroleras .section5 h5 {
+      margin: 2rem 1rem; }
+    #petroleras .section5 .download-btn {
+      margin: 1rem; }
+    #petroleras .section5 .download-afiche {
+      margin: 1rem; }
+    #petroleras .section5 img {
+      width: 15rem; } }
 
 footer {
   margin-top: 2rem;
