@@ -7,9 +7,9 @@
     &-fumigarnos {
             background-image: linear-gradient(
               0deg,
-              #1aab2b 0%,
-              #daf913 50%,
-              #2c8a63 100%
+              $toxic-color-one 0%,
+              $toxic-color-two 50%,
+              $toxic-color-three 100%
             );
     
      
@@ -33,6 +33,11 @@
         transform: scale(1, 2);
         font-family: 'Moul', cursive;
       }
+      .title-4 {
+        font-size: 2.7rem;
+        transform: scale(1, 2.5);
+        font-family: 'Roboto Mono', monospace;  
+      }
     }
     
     &footer {
@@ -44,4 +49,74 @@
         position: relative;
       }  
   }
-   
+  
+  #agrotoxicos {
+    text-align: center;
+    font-size: 16px;
+    p{font-size: 16px;
+    }
+    .section1 {
+      width: 100%;
+      margin: 0;
+      padding-top: 3rem;
+      h2 {
+        color: $toxic-color-one;
+      }
+      &-left {
+        p {
+          padding: 1rem 1rem;
+        }
+      }
+      &-right {
+        padding: 0;
+        
+        img {
+          opacity: 0.8;
+
+          width: 100%;
+          transition: 1s;
+        }:hover{
+          border:  1px solid $toxic-color-two;
+          opacity: 1;
+        }
+      }
+    }
+  
+
+
+    }
+  
+
+
+    @media only screen and (min-width: 768px) {
+      #agrotoxicos {
+        p {
+          font-size: 18px;
+        }
+    
+        .section1 {
+          width: 100%;
+     
+          h2 {
+            margin-top: 3rem;
+            scale: 1.2;
+            color: $toxic-color-one;
+          }
+          &-left {
+            p {
+              padding: 1rem 3rem;
+            }
+          }
+          &-right {
+            img {
+              width: 60%;
+              transition: 1s;
+            }:hover{
+              opacity: 1;
+            }
+          }
+        }
+        
+        
+}
+}
