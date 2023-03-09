@@ -82,7 +82,98 @@
       }
     }
   
+    .section2 {
+      width: 100%;
+      margin: 0;
+      padding-top: 3rem;
+      h2 {
+        font-size: 26px;
+        color: $toxic-color-three;
+      }
+      p {
+        padding: 1rem 1rem;
+      }
+      &-right {
+        padding: 1rem;
+      }
+    }
+    .section3 {
+      width: 100%;
+      margin: 0;
+      padding-top: 4rem;
+      h2 {
+        scale: 1.2;
+        text-align: center;
+        margin: 0 auto;
+       width: 70%;
+        color: $toxic-color-three;
+      }
+      &-left {
+        p {
+          padding: 1rem;
+          font-size: 16px;
+        }
+        div {
+          margin-bottom: 1rem solid white;
+          font-size: 16px;
+          .subsection1{
+            padding: 1rem;
+            background-color: #1aab2b3d;
+          }
+          .subsection2{
 
+            padding: 1rem;
+            background-color:#daf9133d;
+          }
+          .subsection3{
+            padding: 1rem;
+            background-color: #2c8a633d;
+          }
+        }
+      }
+      &-right {
+        p {
+          padding: 2rem 1rem;
+        };
+      }
+    }
+    .section4 {
+      width: 100%;
+      margin: 0;
+      padding-top: 4rem;
+      h2 {
+        scale: 1.2;
+        text-align: center;
+        margin: 0 auto;
+       width: 70%;
+        color: $toxic-color-one;
+      }
+      p {
+        padding: 1rem;
+      }
+      &-left {
+        padding-top:1rem;
+
+        .agrotoxicos {
+          
+          &-circle {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 90%;
+            background-color: #1aab2b3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin:1rem auto;
+            padding:3%
+          }
+        }
+      }
+    }
+    .section5 {
+      @include section5-responsive
+  }
 
     }
   
@@ -98,25 +189,105 @@
           width: 100%;
      
           h2 {
-            margin-top: 3rem;
-            scale: 1.2;
+            margin-top: 4rem;
+            scale: 1, 1,6;
             color: $toxic-color-one;
           }
           &-left {
             p {
-              padding: 1rem 3rem;
+              padding: 1rem 4rem;
             }
           }
           &-right {
             img {
-              width: 60%;
+              width: 70%;
               transition: 1s;
             }:hover{
               opacity: 1;
             }
           }
         }
-        
-        
+  
+        .section2 {
+          padding-top: 7rem;
+          h2 {
+            padding: 1rem 6rem;
+            scale: 1.3;
+            font-size: 26px;
+            color: $toxic-color-three;
+          }
+          p {
+            padding: 1rem 1rem;
+          }
+          &-left {
+            text-align: center;
+            img {
+              width: 60%;
+            };
+          }
+          &-right {
+            padding: 1rem;
+          }
+        }
+        .section3 {
+          width: 100%;
+          margin: 0;
+          padding-top: 3rem;
+          h2 {
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+          }
+          &-left {
+            padding-left: 3rem;
+            p {
+              padding: 1rem;
+              font-size: 16px;
+            }
+            .row {
+              align-items: flex-start
+            }
+          }
+          &-right {
+            p {
+              padding: 1rem 4rem;
+            };
+          }
+        }
+        .section4 {
+
+          padding-top: 7rem;
+          h2 {
+            scale: 1.3;
+
+          }
+          p {
+            padding: 2rem 4rem;
+          }
+          &-left {
+            padding-top:1rem;
+    
+            .agrotoxicos {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+          } 
+              &-circle {
+                width: 15rem;
+                height: 15rem;
+              }
+            }
+            &-right {
+              padding-top: 1rem 6rem;
+          }
+          }
+
+
+      .section5 {
+     
+        @include section5;
+        img {
+        width: 15rem;
+        }
+      }
 }
 }

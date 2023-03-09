@@ -614,6 +614,78 @@ nav .title-home {
       #agrotoxicos .section1-right :hover {
         border: 1px solid #daf913;
         opacity: 1; }
+  #agrotoxicos .section2 {
+    width: 100%;
+    margin: 0;
+    padding-top: 3rem; }
+    #agrotoxicos .section2 h2 {
+      font-size: 26px;
+      color: #2c8a63; }
+    #agrotoxicos .section2 p {
+      padding: 1rem 1rem; }
+    #agrotoxicos .section2-right {
+      padding: 1rem; }
+  #agrotoxicos .section3 {
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem; }
+    #agrotoxicos .section3 h2 {
+      scale: 1.2;
+      text-align: center;
+      margin: 0 auto;
+      width: 70%;
+      color: #2c8a63; }
+    #agrotoxicos .section3-left p {
+      padding: 1rem;
+      font-size: 16px; }
+    #agrotoxicos .section3-left div {
+      margin-bottom: 1rem solid white;
+      font-size: 16px; }
+      #agrotoxicos .section3-left div .subsection1 {
+        padding: 1rem;
+        background-color: #1aab2b3d; }
+      #agrotoxicos .section3-left div .subsection2 {
+        padding: 1rem;
+        background-color: #daf9133d; }
+      #agrotoxicos .section3-left div .subsection3 {
+        padding: 1rem;
+        background-color: #2c8a633d; }
+    #agrotoxicos .section3-right p {
+      padding: 2rem 1rem; }
+  #agrotoxicos .section4 {
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem; }
+    #agrotoxicos .section4 h2 {
+      scale: 1.2;
+      text-align: center;
+      margin: 0 auto;
+      width: 70%;
+      color: #1aab2b; }
+    #agrotoxicos .section4 p {
+      padding: 1rem; }
+    #agrotoxicos .section4-left {
+      padding-top: 1rem; }
+      #agrotoxicos .section4-left .agrotoxicos-circle {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 90%;
+        background-color: #1aab2b3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1rem auto;
+        padding: 3%; }
+  #agrotoxicos .section5-left {
+    margin-top: 3rem;
+    padding: 1rem 3rem; }
+  #agrotoxicos .section5-right {
+    margin-top: 3rem; }
+  #agrotoxicos .section5 h2 {
+    font-size: 28px; }
+  #agrotoxicos .section5 img {
+    width: 14rem; }
 
 @media only screen and (min-width: 768px) {
   #agrotoxicos p {
@@ -621,16 +693,80 @@ nav .title-home {
   #agrotoxicos .section1 {
     width: 100%; }
     #agrotoxicos .section1 h2 {
-      margin-top: 3rem;
-      scale: 1.2;
+      margin-top: 4rem;
+      scale: 1, 1,6;
       color: #1aab2b; }
     #agrotoxicos .section1-left p {
-      padding: 1rem 3rem; }
+      padding: 1rem 4rem; }
     #agrotoxicos .section1-right img {
-      width: 60%;
+      width: 70%;
       transition: 1s; }
     #agrotoxicos .section1-right :hover {
-      opacity: 1; } }
+      opacity: 1; }
+  #agrotoxicos .section2 {
+    padding-top: 7rem; }
+    #agrotoxicos .section2 h2 {
+      padding: 1rem 6rem;
+      scale: 1.3;
+      font-size: 26px;
+      color: #2c8a63; }
+    #agrotoxicos .section2 p {
+      padding: 1rem 1rem; }
+    #agrotoxicos .section2-left {
+      text-align: center; }
+      #agrotoxicos .section2-left img {
+        width: 60%; }
+    #agrotoxicos .section2-right {
+      padding: 1rem; }
+  #agrotoxicos .section3 {
+    width: 100%;
+    margin: 0;
+    padding-top: 3rem; }
+    #agrotoxicos .section3 h2 {
+      padding-top: 3rem;
+      padding-bottom: 1rem; }
+    #agrotoxicos .section3-left {
+      padding-left: 3rem; }
+      #agrotoxicos .section3-left p {
+        padding: 1rem;
+        font-size: 16px; }
+      #agrotoxicos .section3-left .row {
+        align-items: flex-start; }
+    #agrotoxicos .section3-right p {
+      padding: 1rem 4rem; }
+  #agrotoxicos .section4 {
+    padding-top: 7rem; }
+    #agrotoxicos .section4 h2 {
+      scale: 1.3; }
+    #agrotoxicos .section4 p {
+      padding: 2rem 4rem; }
+    #agrotoxicos .section4-left {
+      padding-top: 1rem; }
+      #agrotoxicos .section4-left .agrotoxicos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+      #agrotoxicos .section4-left-circle {
+        width: 15rem;
+        height: 15rem; }
+    #agrotoxicos .section4-right {
+      padding-top: 1rem 6rem; }
+  #agrotoxicos .section5 {
+    text-align: center;
+    font-size: 12px;
+    width: 100%; }
+    #agrotoxicos .section5 .download-afiche {
+      margin: 1rem; }
+    #agrotoxicos .section5 h2 {
+      margin-top: 3rem; }
+    #agrotoxicos .section5 h5 {
+      margin: 2rem 1rem; }
+    #agrotoxicos .section5 .download-btn {
+      margin: 1rem; }
+    #agrotoxicos .section5 .download-afiche {
+      margin: 1rem; }
+    #agrotoxicos .section5 img {
+      width: 15rem; } }
 
 /* ---------ADOPTA------------- */
 /* ------- header (mobile)----*/
@@ -920,9 +1056,9 @@ footer {
       transform: scale(1.1);
       border-bottom: 1px solid rgba(65, 65, 65, 0.438); } }
 
-#section3 {
+#toxic {
   animation: theme 21s linear infinite; }
-  #section3:after, #section3:before {
+  #toxic:after, #toxic:before {
     content: '';
     display: block;
     position: fixed;
@@ -934,9 +1070,9 @@ footer {
     height: 100vmax;
     background: rgba(0, 0, 0, 0.05);
     animation: background 90s linear infinite; }
-  #section3:after {
+  #toxic:after {
     left: 15vw; }
-  #section3:before {
+  #toxic:before {
     right: 15vw;
     animation-delay: -30s;
     animation-direction: reverse; }
