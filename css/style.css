@@ -262,6 +262,7 @@ nav .title-home {
     #adopta .section2 .accordion {
       margin: 1rem; }
   #adopta .section3 {
+    --bs-gutter-x: 0rem;
     width: 100%;
     display: flex;
     align-items: flex-start; }
@@ -277,7 +278,7 @@ nav .title-home {
       #adopta .section3 ul li {
         font-weight: bold;
         font-size: 14px;
-        padding: 2rem 2rem; }
+        padding: 1rem 2rem; }
       #adopta .section3 ul li:hover {
         transition: 1.5s;
         font-size: 18px; }
@@ -399,7 +400,7 @@ nav .title-home {
       padding-top: 6rem;
       text-align: center; }
       #adopta .section4 img {
-        width: 60%;
+        width: 90%;
         margin-top: 2rem; }
     #adopta .section5-left {
       margin-top: 3rem;
@@ -457,112 +458,56 @@ nav .title-home {
   align-items: center; }
 
 #closet {
+  width: 100%;
   text-align: center;
   font-size: 12px; }
-  #closet p {
-    font-size: 14px; }
+  #closet ::-webkit-scrollbar {
+    display: none; }
   #closet .section1 {
     width: 100%;
-    padding: 3rem 2rem; }
-    #closet .section1 p {
-      margin-top: 2rem; }
-    #closet .section1 img {
-      margin-top: 3rem; }
-  #closet .section2 {
-    --bs-gutter-x: 0rem;
-    width: 100%;
-    background-color: #35126A;
-    padding: 2rem 1rem;
-    color: white;
-    align-items: flex-start; }
-    #closet .section2 p {
-      margin-top: 3rem;
+    margin: 0;
+    padding-top: 5rem; }
+    #closet .section1-left {
+      padding: 1rem 0rem; }
+      #closet .section1-left p {
+        padding: 1rem;
+        font-size: 16px; }
+    #closet .section1-right {
+      padding: 0rem;
       width: 100%;
-      font-size: 16px; }
-    #closet .section2 img {
-      text-align: center;
-      margin: 0.5rem 0rem;
-      width: 400px; }
+      margin-top: 3rem; }
+      #closet .section1-right img {
+        width: 100%; }
+  #closet .section2 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0rem;
+    font-size: 18px;
+    text-align: center; }
+    #closet .section2 .row1 {
+      padding: 2rem 2rem;
+      display: flex;
+      text-align: center; }
+    #closet .section2 .box {
+      width: 100%;
+      padding: 1rem 3rem;
+      height: 340px;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0px 0px 100px 200px #5E5956;
+      transition: 0.5s;
+      overflow: auto; }
+      #closet .section2 .box-1:hover {
+        box-shadow: inset 0px 0px 100px -41px #8c0183; }
+      #closet .section2 .box-2:hover {
+        box-shadow: inset 0px 0px 100px -41px #28d910; }
+      #closet .section2 .box-3:hover {
+        box-shadow: inset 0px 0px 100px -41px #e4d015; }
+      #closet .section2 .box-4:hover {
+        box-shadow: inset 0px 0px 100px -41px #d61a1a; }
     #closet .section2 h2 {
       margin-top: 1rem;
       font-size: 25px; }
-    #closet .section2 .accordion {
-      margin: 1rem; }
-  #closet .section3 {
-    width: 100%;
-    display: flex;
-    align-items: flex-start; }
-    #closet .section3 h3 {
-      padding: 1rem; }
-    #closet .section3 p {
-      padding: 0.5rem 0.5rem;
-      font-size: 16px; }
-    #closet .section3 ul {
-      list-style: none;
-      text-align: center;
-      margin: 1rem; }
-      #closet .section3 ul li {
-        font-weight: bold;
-        font-size: 14px;
-        padding: 2rem 2rem; }
-      #closet .section3 ul li:hover {
-        transition: 1.5s;
-        font-size: 18px; }
-    #closet .section3 .more-info {
-      height: 200px;
-      width: 100%;
-      margin: 1rem 0rem;
-      padding: 1.5rem 0.5rem 0.5rem 1.5rem;
-      font-weight: bold; }
-    #closet .section3-left {
-      margin-top: 2rem;
-      color: black; }
-      #closet .section3-left h3 {
-        color: #f91362; }
-    #closet .section3-right {
-      margin-top: 5rem;
-      color: white;
-      background-color: #989898; }
-      #closet .section3-right .more-info {
-        background-color: #5E5956; }
-  #closet .section4 {
-    width: 100%;
-    margin: 2rem 0rem; }
-    #closet .section4 img {
-      width: 100%;
-      margin-top: 3rem; }
-    #closet .section4-left h3 {
-      margin-top: 4rem;
-      padding: 1rem; }
-    #closet .section4-left p {
-      padding: 0.5rem 1rem; }
-    #closet .section4-left ul {
-      list-style: none;
-      text-align: center;
-      margin: 1rem; }
-      #closet .section4-left ul a {
-        text-decoration: none; }
-      #closet .section4-left ul li {
-        color: #35126A;
-        font-weight: bold;
-        font-size: 16px;
-        padding: 1rem;
-        animation: 1s; }
-      #closet .section4-left ul li:hover {
-        scale: 1.2;
-        color: #f91362;
-        transition: 1.2s;
-        font-size: 16px;
-        padding: 1rem; }
-  #closet .section5-left {
-    margin-top: 3rem;
-    padding: 1rem 3rem; }
-  #closet .section5-right {
-    margin-top: 3rem; }
-  #closet .section5 h2 {
-    font-size: 28px; }
-  #closet .section5 img {
-    width: 14rem; }
 
 @media only screen and (min-width: 768px) {
   #closet {
@@ -570,47 +515,27 @@ nav .title-home {
     #closet p {
       font-size: 18px; }
     #closet .section1 {
-      width: 100%; }
+      width: 100%;
+      margin: 0;
+      padding-top: 7rem; }
       #closet .section1-left {
-        margin-top: 3rem; }
+        padding: 6rem 6rem; }
+        #closet .section1-left p {
+          font-size: 18px;
+          margin-top: 2rem; }
       #closet .section1-right {
-        margin-top: 3rem; }
+        padding: 6rem 4rem;
+        width: 50%; }
+        #closet .section1-right img {
+          width: 100%;
+          border-radius: 20px; }
     #closet .section2 {
-      width: 100%; }
-      #closet .section2-left {
-        margin-top: 3rem; }
-      #closet .section2-right {
-        margin-top: 3rem; }
-    #closet .section3 {
-      width: 100%; }
-      #closet .section3-left {
-        margin-top: 3rem; }
-      #closet .section3-right {
-        margin-top: 3rem; }
-      #closet .section3 p {
-        padding: 0.5rem 1rem; }
-      #closet .section3 ul li {
-        padding: 1rem 2rem; }
-    #closet .section4 {
-      padding-top: 6rem;
-      text-align: center; }
-      #closet .section4 img {
-        width: 60%;
-        margin-top: 2rem; }
-    #closet .section5 {
-      text-align: center;
-      font-size: 12px;
-      width: 100%; }
-      #closet .section5 .download-afiche {
-        margin: 1rem; }
-      #closet .section5 h2 {
-        margin-top: 3rem; }
-      #closet .section5 h5 {
-        margin: 2rem 1rem; }
-      #closet .section5 .download-btn {
-        margin: 1rem; }
-      #closet .section5 .download-afiche {
-        margin: 1rem; } }
+      width: 100%;
+      margin: 0;
+      padding-top: 7rem; }
+      #closet .section2 .box {
+        width: 25%;
+        height: 450px; } }
 
 /* ---------PAREN DE FUMIGARNOS----------------- */
 /* ------- header ----*/

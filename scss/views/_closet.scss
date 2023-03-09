@@ -1,338 +1,370 @@
-
 /* ---------CLOSET LGBT----------------- */
 
-  /* ------- header ----*/
-  .afiche {
-    @include afiche;
-    &-lgbt {
-        background-image: linear-gradient(
-            0deg,
-            #8c0183 0%,
-            #1b15d2 20%,
-            #28d910 40%,
-            #e4d015 60%,
-            #d75e17 80%,
-            #d61a1a 100%
-          );
-     
-      .title-1 {
-        text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
-        font-size: 3rem;
-        transform: scale(1, 2);
-        font-family: 'Moul', cursive;
-      }
-      
-      .title-2 {
-        text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
-        font-size: 2.7rem;
-        transform: scale(1, 2.5);
-        font-family: 'Roboto Mono', monospace;
-      }
-      
-      img {
-        width: 10rem;
-      }
-      .title-3 {
-        text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
-        font-size: 2rem;
-        transform: scale(1, 3);
-        font-family: 'Moul', cursive;
-      }
-      .title-4 {
-        text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
-        font-size: 2.4rem;
-        transform: scale(1, 3);
-        font-family: 'Roboto Mono', monospace;
+/* ------- header ----*/
+.afiche {
+  @include afiche;
+
+  &-lgbt {
+    background-image: linear-gradient(0deg,
+        $closet-color-violet 0%,
+        $closet-color-blue 20%,
+        $closet-color-green 40%,
+        $closet-color-yellow 60%,
+        $closet-color-orange 80%,
+        $closet-color-red 100%);
+
+    .title-1 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 3rem;
+      transform: scale(1, 2);
+      font-family: 'Moul', cursive;
+    }
+
+    .title-2 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 2.7rem;
+      transform: scale(1, 2.5);
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    img {
+      width: 10rem;
+    }
+
+    .title-3 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 2rem;
+      transform: scale(1, 3);
+      font-family: 'Moul', cursive;
+    }
+
+    .title-4 {
+      text-shadow: 0px 5px 5px rgba(238, 212, 65, 0.164);
+      font-size: 2.4rem;
+      transform: scale(1, 3);
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+
+  &footer {
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    top: 10px;
+    position: relative;
+  }
+}
+
+.row {
+  align-items: center;
+}
+
+#closet {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section1 {
+    width: 100%;
+    margin: 0;
+    padding-top: 5rem;
+
+    &-left {
+      padding: 1rem 0rem;
+
+      p {
+        padding: 1rem;
+        font-size: 16px;
       }
     }
-    
-    &footer {
-        border-top: 2px solid black;
-        padding: 1rem;
-        width: 80%;
-        font-size: 1.5rem;
-        top: 10px;
-        position: relative;
-      }  
+
+    &-right {
+      padding: 0rem;
+      width: 100%;
+      margin-top: 3rem;
+
+      img {
+        width: 100%;
+
+      }
+    }
   }
-   
-  .row {
-    align-items: center;
-  }
-  
-  #closet {
+
+  .section2 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0rem;
+    font-size: 18px;
     text-align: center;
-    font-size: 12px;
-    p{font-size: 14px;}
+
+    .row1 {
+      padding: 2rem 2rem;
+      display: flex;
+      text-align: center;
+    }
+
+    .box {
+      width: 100%;
+      padding: 1rem 3rem;
+      height: 340px;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0px 0px 100px 200px $color-grey-200;
+      transition: 0.5s;
+      overflow: auto;
+      
+      &-1:hover {
+        box-shadow: inset 0px 0px 100px -41px $closet-color-violet;
+      }
+      &-2:hover {
+        box-shadow: inset 0px 0px 100px -41px $closet-color-green
+      }
+
+      &-3:hover {
+        box-shadow: inset 0px 0px 100px -41px $closet-color-yellow
+      }
+
+      &-4:hover {
+        box-shadow: inset 0px 0px 100px -41px $closet-color-red
+      }
+    }
+
+    h2 {
+      margin-top: 1rem;
+      font-size: 25px;
+    }
+
+
+  }
+
+  // .section3 {
+  //   width: 100%;
+  //   display: flex;
+  //   align-items: flex-start;
+  //   h3 {
+  //     padding: 1rem;
+  //   }
+  //   p {
+  //     padding: 0.5rem 0.5rem;
+  //     font-size: 16px;
+  //   }
+
+  //   ul {
+  //     list-style: none;
+  //     text-align: center;
+  //     margin: 1rem;
+
+  //     li {
+  //       font-weight: bold;
+  //       font-size: 14px;
+  //       padding: 2rem 2rem;
+  //     }
+
+  //     li:hover {
+  //       transition: 1.5s;
+  //       font-size: 18px;
+  //     }
+
+  //   }
+  //   .more-info {
+  //     height: 200px;
+  //     width: 100%;
+  //     margin: 1rem 0rem;
+  //     padding: 1.5rem 0.5rem 0.5rem 1.5rem;
+  //     font-weight: bold;
+  //   }
+
+  //   &-left {
+  //     margin-top: 2rem;
+  //     color: black;
+
+  //     h3 {
+  //       color:$adopta-color-two;
+  //     }
+  //   }
+
+  //   &-right {
+  //     margin-top: 5rem;
+  //     color: white;
+  //     background-color: $color-grey-100;
+
+  //     .more-info {
+  //       background-color: $color-grey-200;
+  //     }
+  //   }
+
+  // }
+
+  // .section4 {
+  //   width: 100%;
+  //   margin: 2rem 0rem;
+
+  //   img {
+  //     width: 100%;
+  //     margin-top: 3rem;
+  //   }
+
+  //   &-left {
+  //     h3 {
+  //       margin-top: 4rem;
+  //       padding: 1rem;
+  //     }
+
+  //     p {
+  //       padding: 0.5rem 1rem;
+  //     }
+
+  //     ul {
+  //       list-style: none;
+  //       text-align: center;
+  //       margin: 1rem;
+
+  //       a {
+  //         text-decoration: none;
+  //       }
+
+  //       li {
+  //         color: $adopta-color-one;
+  //         font-weight: bold;
+  //         font-size: 16px;
+  //         padding: 1rem;
+  //         animation: 1s;
+  //       }
+
+  //       li:hover {
+  //         scale: 1.2;
+  //         color: $adopta-color-two;
+  //         transition: 1.2s;
+  //         font-size: 16px;
+  //         padding: 1rem;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .section5 {
+  //   @include section5-responsive
+  //   // width: 100%;
+
+  //   // h2 {
+  //   //   margin-top: 3rem;
+  //   // }
+
+  //   // h5 {
+  //   //   margin: 2rem 1rem;
+  //   // }
+
+  //   // .download-btn {
+  //   //   margin: 1rem
+  //   // }
+
+  //   // .download-afiche {
+  //   //   margin: 1rem;
+  //   // }
+  // }
+
+  // .waves {
+  //   width: 100%;
+  //   position: relative;
+  //   display: inline-block;
+  //   bottom: -10px;
+
+  //   &-top {
+  //     border-bottom: 4rem solid $adopta-color-one;
+  //   }
+
+  //   &-bottom {
+  //     background-color: $adopta-color-one;
+  //     bottom: 0px;
+  //     top: -1px
+  //   }
+  // }
+}
+
+// para vista en desktop
+@media only screen and (min-width: 768px) {
+  #closet {
+    p {
+      font-size: 18px;
+    }
+
+    text-align: center;
+
+
     .section1 {
       width: 100%;
-      padding: 3rem 2rem;
-  
-      p {
-        margin-top: 2rem;
-      }
-  
-      img {
-        margin-top: 3rem;
-      }
-    }
-  
-    .section2 {
-      --bs-gutter-x: 0rem;
-      width: 100%;
-      background-color: $adopta-color-one;
-      padding: 2rem 1rem;
-      color: white;
-      align-items: flex-start;
-  
-      p {
-        margin-top: 3rem;
-        width: 100%;
-        font-size: 16px;
-      }
-  
-      img {
-        text-align: center;
-        margin: 0.5rem 0rem;
-        width: 400px;
-      }
-  
-      h2 {
-  
-        margin-top: 1rem;
-        font-size: 25px;
-      }
-  
-      .accordion {
-        margin: 1rem;
-      }
-    }
-  
-    .section3 {
-      width: 100%;
-      display: flex;
-      align-items: flex-start;
-      h3 {
-        padding: 1rem;
-      }
-      p {
-        padding: 0.5rem 0.5rem;
-        font-size: 16px;
-      }
-  
-      ul {
-        list-style: none;
-        text-align: center;
-        margin: 1rem;
-  
-        li {
-          font-weight: bold;
-          font-size: 14px;
-          padding: 2rem 2rem;
-        }
-  
-        li:hover {
-          transition: 1.5s;
-          font-size: 18px;
-        }
-  
-      }
-      .more-info {
-        height: 200px;
-        width: 100%;
-        margin: 1rem 0rem;
-        padding: 1.5rem 0.5rem 0.5rem 1.5rem;
-        font-weight: bold;
-      }
-  
+      margin: 0;
+      padding-top: 7rem;
+
       &-left {
-        margin-top: 2rem;
-        color: black;
-  
-        h3 {
-          color:$adopta-color-two;
-        }
-      }
-  
-      &-right {
-        margin-top: 5rem;
-        color: white;
-        background-color: $color-grey-100;
-  
-        .more-info {
-          background-color: $color-grey-200;
-        }
-      }
-  
-    }
-  
-    .section4 {
-      width: 100%;
-      margin: 2rem 0rem;
-  
-      img {
-        width: 100%;
-        margin-top: 3rem;
-      }
-  
-      &-left {
-        h3 {
-          margin-top: 4rem;
-          padding: 1rem;
-        }
-  
+        padding: 6rem 6rem;
+
         p {
-          padding: 0.5rem 1rem;
+          font-size: 18px;
+          margin-top: 2rem;
         }
-  
-        ul {
-          list-style: none;
-          text-align: center;
-          margin: 1rem;
-  
-          a {
-            text-decoration: none;
-          }
-  
-          li {
-            color: $adopta-color-one;
-            font-weight: bold;
-            font-size: 16px;
-            padding: 1rem;
-            animation: 1s;
-          }
-  
-          li:hover {
-            scale: 1.2;
-            color: $adopta-color-two;
-            transition: 1.2s;
-            font-size: 16px;
-            padding: 1rem;
-          }
+      }
+
+      &-right {
+        padding: 6rem 4rem;
+        width: 50%;
+
+        img {
+          width: 100%;
+          border-radius: 20px;
+
         }
       }
     }
-  
-    .section5 {
-      @include section5-responsive
-      // width: 100%;
-  
-      // h2 {
-      //   margin-top: 3rem;
-      // }
-  
-      // h5 {
-      //   margin: 2rem 1rem;
-      // }
-  
-      // .download-btn {
-      //   margin: 1rem
-      // }
-  
-      // .download-afiche {
-      //   margin: 1rem;
-      // }
+
+    .section2 {
+      width: 100%;
+      margin: 0;
+      padding-top: 7rem;
+      .box {
+        width: 25%;
+        height: 450px;
+      }
     }
-  
-    // .waves {
+
+    // .section3 {
     //   width: 100%;
-    //   position: relative;
-    //   display: inline-block;
-    //   bottom: -10px;
-  
-    //   &-top {
-    //     border-bottom: 4rem solid $adopta-color-one;
+    //   &-left{
+    //     margin-top: 3rem;
     //   }
-  
-    //   &-bottom {
-    //     background-color: $adopta-color-one;
-    //     bottom: 0px;
-    //     top: -1px
+    //   &-right{
+    //     margin-top: 3rem;
+    //   }
+    //   p{
+    //   padding:0.5rem 1rem;
+    //   }
+    //   ul{
+    //   li {
+    //     padding: 1rem 2rem;
     //   }
     // }
+    // }
+
+    // .section4 {
+    //   padding-top: 6rem;
+    //   text-align: center;
+
+    //   //   display: flex;
+    //   //   flex-direction: column;
+    //   //   align-content: center;
+    //   img {
+    //     width: 60%;
+    //     margin-top: 2rem;
+    //   }
+    // }
+
+    // .section5 {
+    //   @include section5;
+    // }
   }
-  
-  @media only screen and (min-width: 768px) {
-    #closet {
-      p{font-size: 18px;}
-      text-align: center;
-    
-  
-    .section1 {
-      width: 100%;
-      &-left{
-        margin-top:3rem;
-      }
-      // p {
-      //   font-size: 20px;
-      //   margin: 4rem 3rem;
-      // }
-  
-      // h1 {
-      //   padding: 0rem 3rem;
-      //   font-size: 2rem;
-      //   font-family: 'Moul';
-      // }
-      &-right {
-        margin-top:3rem;
-      }
-    }
-  
-    .section2 {
-      width: 100%;
-      &-left {
-        margin-top: 3rem;
-        // padding: 0rem 3rem;
-      }
-      &-right {
-        margin-top: 3rem;
-      }
-      // p {
-      //   margin: 1rem
-      // }
-  
-      // img {
-      //   width: 400px;
-      // }
-      // h2 {
-      //   font-size: 2rem;
-  
-      // }
-    }
-  
-    .section3 {
-      width: 100%;
-      &-left{
-        margin-top: 3rem;
-      }
-      &-right{
-        margin-top: 3rem;
-      }
-      p{
-      padding:0.5rem 1rem;
-      }
-      ul{
-      li {
-        padding: 1rem 2rem;
-      }
-    }
-    }
-  
-    .section4 {
-      padding-top: 6rem;
-      text-align: center;
-  
-      //   display: flex;
-      //   flex-direction: column;
-      //   align-content: center;
-      img {
-        width: 60%;
-        margin-top: 2rem;
-      }
-    }
-  
-    .section5 {
-      @include section5;
-    }
-    }
-  }
+}

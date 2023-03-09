@@ -116,6 +116,7 @@
   }
 
   .section3 {
+    --bs-gutter-x: 0rem;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -135,7 +136,7 @@
       li {
         font-weight: bold;
         font-size: 14px;
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
       }
 
       li:hover {
@@ -241,7 +242,7 @@
     }
   }
 }
-
+// Como se vera en desktop
 @media only screen and (min-width: 768px) {
   #adopta {
     p{font-size: 18px;}
@@ -318,7 +319,7 @@
     //   flex-direction: column;
     //   align-content: center;
     img {
-      width: 60%;
+      width: 90%;
       margin-top: 2rem;
     }
   }
