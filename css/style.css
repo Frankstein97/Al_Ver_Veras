@@ -489,6 +489,7 @@ nav .title-home {
       display: flex;
       text-align: center; }
     #closet .section2 h2 {
+      color: #d75e17;
       margin-top: 1rem;
       font-size: 25px; }
     #closet .section2 .box {
@@ -518,6 +519,7 @@ nav .title-home {
       padding-left: 0;
       padding-right: 0; }
     #closet .section3 h2 {
+      color: #28d910;
       margin-top: 4rem;
       font-size: 25px; }
     #closet .section3 p {
@@ -525,6 +527,44 @@ nav .title-home {
       padding: 2rem 2rem;
       background-color: white;
       box-sizing: border-box; }
+  #closet .section4 {
+    width: 100%;
+    margin: 0;
+    padding: 0rem 0rem;
+    font-size: 18px;
+    text-align: center; }
+    #closet .section4-left {
+      padding: 0rem;
+      margin: 0rem; }
+    #closet .section4 h2 {
+      color: #d75e17;
+      margin-top: 4rem;
+      font-size: 25px;
+      padding-bottom: 1rem; }
+    #closet .section4 .box {
+      width: 100%;
+      padding: 1rem 3rem;
+      height: 340px;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0px 0px 100px 200px #5E5956;
+      transition: 0.5s;
+      overflow: auto; }
+      #closet .section4 .box-10:hover {
+        box-shadow: inset 0px 0px 100px -41px #5bcefa; }
+      #closet .section4 .box-11:hover {
+        box-shadow: inset 0px 0px 100px -41px #f5a9b8; }
+      #closet .section4 .box-12:hover {
+        box-shadow: inset 0px 0px 100px -41px #5bcefa; }
+  #closet .section5-left {
+    margin-top: 3rem;
+    padding: 1rem 3rem; }
+  #closet .section5-right {
+    margin-top: 3rem; }
+  #closet .section5 h2 {
+    font-size: 28px; }
+  #closet .section5 img {
+    width: 14rem; }
 
 @media only screen and (min-width: 768px) {
   #closet {
@@ -552,7 +592,45 @@ nav .title-home {
       padding-top: 7rem; }
       #closet .section2 .box {
         width: 25%;
-        height: 450px; } }
+        height: 450px; }
+    #closet h4 {
+      width: 50%;
+      margin: 0 auto; }
+    #closet .section3 {
+      width: 100%;
+      margin: 0;
+      padding-top: 7rem; }
+      #closet .section3 p {
+        padding: 2  rem 1rem;
+        width: 25%;
+        height: 25vh; }
+      #closet .section3-left {
+        display: flex;
+        justify-content: center;
+        flex-direction: row; }
+    #closet .section4 {
+      width: 100%;
+      margin: 0;
+      padding-top: 7rem; }
+      #closet .section4 .box {
+        width: 33%;
+        height: 450px; }
+    #closet .section5 {
+      text-align: center;
+      font-size: 12px;
+      width: 100%; }
+      #closet .section5 .download-afiche {
+        margin: 1rem; }
+      #closet .section5 h2 {
+        margin-top: 3rem; }
+      #closet .section5 h5 {
+        margin: 2rem 1rem; }
+      #closet .section5 .download-btn {
+        margin: 1rem; }
+      #closet .section5 .download-afiche {
+        margin: 1rem; }
+      #closet .section5 img {
+        width: 15rem; } }
 
 /* ---------PAREN DE FUMIGARNOS----------------- */
 /* ------- header ----*/
